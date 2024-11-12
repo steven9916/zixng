@@ -129,11 +129,11 @@ proxies:
   udp: false
   tls: true
   network: ws
-  servername: 9916.eu.org                         # SNI 域名，与下面 host 一致
+  servername: BpB.Zxing.eu.ORG                         # SNI 域名，与下面 host 一致
   ws-opts:
-    path: "/O6LARdtCYFOKanPW"                              # 自定义 path 路径
+    path: "/9NUo3p2Lz47bq1y8?ed=2560"                              # 自定义 path 路径
     headers:
-      Host: 9916.eu.org                           # Host 域名，与上面 server 字段的地址一致
+      Host: bpb.zxing.eu.org                           # Host 域名，与上面 server 字段的地址一致
 
 - name: vless-jp                               # 可以自定义节点名称
   type: vless
@@ -145,11 +145,11 @@ proxies:
   udp: false
   tls: true
   network: ws
-  servername: 9916.eu.org                         # SNI 域名，与下面 host 一致
+  servername: bpB.ZxIng.EU.ORg                         # SNI 域名，与下面 host 一致
   ws-opts:
-    path: "/qXmEXwcbFym8n0o0"                              # 自定义 path 路径
+    path: "/A8lN6glpDQ4d2AXS?ed=2560"                              # 自定义 path 路径
     headers:
-      Host: 9916.eu.org                           # Host 域名，与上面 server 字段的地址一致
+      Host: bpb.zxing.eu.org                           # Host 域名，与上面 server 字段的地址一致
 
 - name: vless-gb                               # 可以自定义节点名称
   type: vless
@@ -161,11 +161,11 @@ proxies:
   udp: false
   tls: true
   network: ws
-  servername: 9916.eu.org                         # SNI 域名，与下面 host 一致
+  servername: BPb.stevEn9916.eU.ORG                         # SNI 域名，与下面 host 一致
   ws-opts:
-    path: "/qXmEXwcbFym8n0o0"                              # 自定义 path 路径
+    path: "/7KaACdsa1Bhjkz1O?ed=2560"                              # 自定义 path 路径
     headers:
-      Host: 9916.eu.org                           # Host 域名，与上面 server 字段的地址一致
+      Host: bpb.steven9916.eu.org                           # Host 域名，与上面 server 字段的地址一致
 
 
 # 分流组可自行创建或添加，proxies 参数下的节点名称，按需求自行增减，确保出现的节点名称在代理协议中可查找

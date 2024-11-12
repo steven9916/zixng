@@ -163,7 +163,7 @@ proxies:
   network: ws
   servername: 9916.eu.org                         # SNI 域名，与下面 host 一致
   ws-opts:
-    path: "/qXmEXwcbFym8n0o0"                              # 自定义 path 路径
+    path: "/Dw7TdRffjylGOsVO?ed=2560"                              # 自定义 path 路径
     headers:
       Host: 9916.eu.org                           # Host 域名，与上面 server 字段的地址一致
 

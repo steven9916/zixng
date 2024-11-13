@@ -208,7 +208,7 @@ proxies:
   type: vless
   server: 443.9916.eu.org                             # 解析的 IP / 域名或优选 IP / 域名
   port: 443                                      # 自定义端口
-  uuid: 8179d515-b364-455f-9452-5a47b644ddc1       # 自定义 UUID
+  uuid: 66fca8e6-868d-4a41-a115-d3ea1dcd9955       # 自定义 UUID
   udp: false
   tls: true
   network: ws

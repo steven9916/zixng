@@ -190,7 +190,7 @@ proxies:
     headers:
       Host: us.zxing.eu.org                           # Host 域名，与上面 server 字段的地址一致
 
-  - name: luyou-steven9916                               # 可以自定义节点名称
+- name: luyou-steven9916                               # 可以自定义节点名称
   type: vless
   server: 443.9916.eu.org                             # 解析的 IP / 域名或优选 IP / 域名
   port: 443                                      # 自定义端口

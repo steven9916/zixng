@@ -286,4 +286,4 @@ rules:
   - RULE-SET,EasyPrivacy,REJECT
   - RULE-SET,ProgramAD,REJECT
   - DOMAIN-SUFFIX,gitlab.com,DIRECT
-  - DOMAIN-SUFFIX,cloudflare.com,DIRECT
+  - DOMAIN,dash.cloudflare.com,DIRECT

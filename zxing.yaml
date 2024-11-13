@@ -203,6 +203,20 @@ proxies:
     path: "/?ed=2048"                              # 自定义 path 路径
     headers:
       Host: luyou.steven9916.eu.org                           # Host 域名，与上面 server 字段的地址一致
+      
+- name: luyou-zxing                               # 可以自定义节点名称
+  type: vless
+  server: 443.9916.eu.org                             # 解析的 IP / 域名或优选 IP / 域名
+  port: 443                                      # 自定义端口
+  uuid: 8179d515-b364-455f-9452-5a47b644ddc1       # 自定义 UUID
+  udp: false
+  tls: true
+  network: ws
+  servername: luyou.zxing.eu.org                         # SNI 域名，与下面 Host 一致
+  ws-opts:
+    path: "/?ed=2048"                              # 自定义 path 路径
+    headers:
+      Host: luyou.zxing.eu.org                           # Host 域名，与上面 server 字段的地址一致
 
 
 # 分流组可自行创建或添加，proxies 参数下的节点名称，按需求自行增减，确保出现的节点名称在代理协议中可查找
@@ -223,6 +237,7 @@ proxy-groups:
     - warp-wireguard
     - us-fd-zxing
     - luyou-steven9916
+    - luyou-zxing
 
 - name: 自动选择
   type: url-test
@@ -240,6 +255,7 @@ proxy-groups:
     - warp-wireguard
     - us-fd-zxing
     - luyou-steven9916
+    - luyou-zxing
       
 - name: 🌍选择代理
   type: select
@@ -257,6 +273,7 @@ proxy-groups:
     - warp-wireguard
     - us-fd-zxing
     - luyou-steven9916
+    - luyou-zxing
    
 # 代理规则可自行添加 
 rules:

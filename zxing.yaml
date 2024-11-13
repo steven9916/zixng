@@ -78,13 +78,6 @@ proxies:
     path: "/3FXAvOU4Y0SrO0oI"                              # 自定义 path 路径
     headers:
       Host: 9916.eu.org                           # Host 域名，与上面 server 字段的地址一致
-      max-early-data: 2560
-      early-data-header-name: Sec-WebSocket-Protocol
-  alpn:
-   - h2
-   - http/1.1
-  client-fingerprin: random
-  skip-cert-verify: false
 
 - name: vless-v2                              # 可以自定义节点名称
   type: vless
@@ -99,13 +92,6 @@ proxies:
     path: "/RTW5T33ek4h5jerv?ed=2560"                              # 自定义 path 路径
     headers:
       Host: 9916.eu.org                           # Host 域名，与上面 server 字段的地址一致
-      max-early-data: 2560
-      early-data-header-name: Sec-WebSocket-Protocol
-  alpn:
-   - h2
-   - http/1.1
-  client-fingerprin: random
-  skip-cert-verify: false
 
 - name: vless-v3                              # 可以自定义节点名称
   type: vless
@@ -120,13 +106,6 @@ proxies:
     path: "/pbDc8hZcR1df6ElX?ed=2560"                              # 自定义 path 路径
     headers:
       Host: bpb.steven9916.eu.org                           # Host 域名，与上面 server 字段的地址一致
-      max-early-data: 2560
-      early-data-header-name: Sec-WebSocket-Protocol
-  alpn:
-   - h2
-   - http/1.1
-  client-fingerprin: random
-  skip-cert-verify: false
 
 - name: vless-v4                           # 可以自定义节点名称
   type: vless
@@ -141,13 +120,6 @@ proxies:
     path: "/AVCiMMXETW7lmjDu?ed=2560"                              # 自定义 path 路径
     headers:
       Host: bpb.zxing.eu.org                           # Host 域名，与上面 server 字段的地址一致
-      max-early-data: 2560
-      early-data-header-name: Sec-WebSocket-Protocol
-  alpn:
-   - h2
-   - http/1.1
-  client-fingerprin: random
-  skip-cert-verify: false
 
 - name: vless-hk                                   # 可以自定义节点名称
   type: vless
@@ -162,13 +134,6 @@ proxies:
     path: "/9NUo3p2Lz47bq1y8?ed=2560"                              # 自定义 path 路径
     headers:
       Host: bpb.zxing.eu.org                           # Host 域名，与上面 server 字段的地址一致
-      max-early-data: 2560
-      early-data-header-name: Sec-WebSocket-Protocol
-  alpn:
-   - h2
-   - http/1.1
-  client-fingerprin: random
-  skip-cert-verify: false
 
 - name: vless-jp                               # 可以自定义节点名称
   type: vless
@@ -185,13 +150,6 @@ proxies:
     path: "/A8lN6glpDQ4d2AXS?ed=2560"                              # 自定义 path 路径
     headers:
       Host: bpb.zxing.eu.org                           # Host 域名，与上面 server 字段的地址一致
-      max-early-data: 2560
-      early-data-header-name: Sec-WebSocket-Protocol
-  alpn:
-   - h2
-   - http/1.1
-  client-fingerprin: random
-  skip-cert-verify: false
 
 - name: vless-gb                               # 可以自定义节点名称
   type: vless
@@ -208,13 +166,6 @@ proxies:
     path: "/7KaACdsa1Bhjkz1O?ed=2560"                              # 自定义 path 路径
     headers:
       Host: bpb.steven9916.eu.org                           # Host 域名，与上面 server 字段的地址一致
-      max-early-data: 2560
-      early-data-header-name: Sec-WebSocket-Protocol
-  alpn:
-   - h2
-   - http/1.1
-  client-fingerprin: random
-  skip-cert-verify: false
 
 # 分流组可自行创建或添加，proxies 参数下的节点名称，按需求自行增减，确保出现的节点名称在代理协议中可查找
 proxy-groups:

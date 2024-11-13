@@ -218,7 +218,6 @@ proxies:
     headers:
       Host: luyou.zxing.eu.org                           # Host 域名，与上面 server 字段的地址一致
   Fingerprint: random
-  allowlnsecure: false
 
 
 # 分流组可自行创建或添加，proxies 参数下的节点名称，按需求自行增减，确保出现的节点名称在代理协议中可查找

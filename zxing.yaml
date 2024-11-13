@@ -235,3 +235,4 @@ rules:
   - RULE-SET,EasyListChina,REJECT
   - RULE-SET,EasyPrivacy,REJECT
   - RULE-SET,ProgramAD,REJECT
+  - DOMAIN,gitlab.com,DIRECT

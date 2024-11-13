@@ -190,7 +190,7 @@ proxies:
     headers:
       Host: us.zxing.eu.org                           # Host 域名，与上面 server 字段的地址一致
 
-  - name: luyou.steven9916.eu.org                               # 可以自定义节点名称
+  - name: luyou-steven9916                               # 可以自定义节点名称
   type: vless
   server: 443.9916.eu.org                             # 解析的 IP / 域名或优选 IP / 域名
   port: 443                                      # 自定义端口
@@ -222,7 +222,7 @@ proxy-groups:
     - vless-gb
     - warp-wireguard
     - us-fd-zxing
-    - luyou.steven9916.eu.org
+    - luyou-steven9916
 
 - name: 自动选择
   type: url-test
@@ -239,7 +239,7 @@ proxy-groups:
     - vless-gb
     - warp-wireguard
     - us-fd-zxing
-    - luyou.steven9916.eu.org
+    - luyou-steven9916
       
 - name: 🌍选择代理
   type: select
@@ -256,7 +256,7 @@ proxy-groups:
     - vless-gb
     - warp-wireguard
     - us-fd-zxing
-    - luyou.steven9916.eu.org
+    - luyou-steven9916
    
 # 代理规则可自行添加 
 rules:

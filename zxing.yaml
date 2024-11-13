@@ -167,6 +167,16 @@ proxies:
     headers:
       Host: bpb.steven9916.eu.org                           # Host 域名，与上面 server 字段的地址一致
 
+- name: warp-wireguard                                       # 可以自定义节点名称
+  type: wireguard         
+  server: 162.159.195.255                                     # 可自定义优选 EndPoint IP，与下方端口相对应
+  port: 1180                                                 # 可自定义优选 EndPoint IP，与上方 IP 相对应
+  ip: 172.16.0.2
+  public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
+  private-key: OLx1djIFQ7+EAu0pufciWEtZPeEFjqS97cPcFDec5Hg=  # 获取 warp 的 私钥
+  udp: true
+
+
 
 # 分流组可自行创建或添加，proxies 参数下的节点名称，按需求自行增减，确保出现的节点名称在代理协议中可查找
 proxy-groups:
@@ -183,6 +193,7 @@ proxy-groups:
     - vless-hk
     - vless-jp
     - vless-gb
+    - warp-wireguard
 
 - name: 自动选择
   type: url-test
@@ -197,6 +208,7 @@ proxy-groups:
     - vless-hk
     - vless-jp
     - vless-gb
+    - warp-wireguard
       
 - name: 🌍选择代理
   type: select
@@ -211,6 +223,7 @@ proxy-groups:
     - vless-hk
     - vless-jp
     - vless-gb
+    - warp-wireguard
    
 # 代理规则可自行添加 
 rules:

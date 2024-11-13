@@ -176,6 +176,19 @@ proxies:
   private-key: OLx1djIFQ7+EAu0pufciWEtZPeEFjqS97cPcFDec5Hg=  # 获取 warp 的 私钥
   udp: true
 
+- name: us-fd-zxing                               # 可以自定义节点名称
+  type: vless
+  server: 443.9916.eu.org                             # 解析的 IP / 域名或优选 IP / 域名
+  port: 443                                      # 自定义端口
+  uuid: c51b32f8-e06e-4905-ba0a-8ae01c2b66e0       # 自定义 UUID
+  udp: false
+  tls: true
+  network: ws
+  servername: us.zxing.eu.org                         # SNI 域名，与下面 Host 一致
+  ws-opts:
+    path: "/"                              # 自定义 path 路径
+    headers:
+      Host: us.zxing.eu.org                           # Host 域名，与上面 server 字段的地址一致
 
 
 # 分流组可自行创建或添加，proxies 参数下的节点名称，按需求自行增减，确保出现的节点名称在代理协议中可查找
@@ -194,6 +207,7 @@ proxy-groups:
     - vless-jp
     - vless-gb
     - warp-wireguard
+    - us-fd-zxing
 
 - name: 自动选择
   type: url-test
@@ -209,6 +223,7 @@ proxy-groups:
     - vless-jp
     - vless-gb
     - warp-wireguard
+    - us-fd-zxing
       
 - name: 🌍选择代理
   type: select
@@ -224,6 +239,7 @@ proxy-groups:
     - vless-jp
     - vless-gb
     - warp-wireguard
+    - us-fd-zxing
    
 # 代理规则可自行添加 
 rules:

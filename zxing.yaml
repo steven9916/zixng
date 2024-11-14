@@ -218,6 +218,48 @@ proxies:
     headers:
       Host: luyou.zxing.eu.org                           # Host 域名，与上面 server 字段的地址一致
 
+- name: 9916-us-kg                               # 可以自定义节点名称
+  type: vless
+  server: 443.9916.eu.org                             # 解析的 IP / 域名或优选 IP / 域名
+  port: 443                                      # 自定义端口
+  uuid: 8179d515-b364-455f-9452-5a47b644ddc1       # 自定义 UUID
+  udp: false
+  tls: true
+  network: ws
+  servername: 9916.US.Kg                         # SNI 域名，与下面 Host 一致
+  ws-opts:
+    path: "/XlfumvjzNzIRCI02?ed=2560"                              # 自定义 path 路径
+    headers:
+      Host: 9916.us.kg                           # Host 域名，与上面 server 字段的地址一致
+
+- name: zx9916-us-kg                               # 可以自定义节点名称
+  type: vless
+  server: 443.9916.eu.org                             # 解析的 IP / 域名或优选 IP / 域名
+  port: 443                                      # 自定义端口
+  uuid: 8179d515-b364-455f-9452-5a47b644ddc1       # 自定义 UUID
+  udp: false
+  tls: true
+  network: ws
+  servername: zx9916.us.KG                         # SNI 域名，与下面 Host 一致
+  ws-opts:
+    path: "/tu3kWLJLvwjslR9L?ed=2560"                              # 自定义 path 路径
+    headers:
+      Host: zx9916.us.kg                           # Host 域名，与上面 server 字段的地址一致
+
+- name: zxing-us-kg                               # 可以自定义节点名称
+  type: vless
+  server: 443.9916.eu.org                             # 解析的 IP / 域名或优选 IP / 域名
+  port: 443                                      # 自定义端口
+  uuid: 8179d515-b364-455f-9452-5a47b644ddc1       # 自定义 UUID
+  udp: false
+  tls: true
+  network: ws
+  servername: zXIng.US.KG                         # SNI 域名，与下面 Host 一致
+  ws-opts:
+    path: "/vaLoHxvrIm8DZNh9?ed=2560"                              # 自定义 path 路径
+    headers:
+      Host: zxing.us.kg                           # Host 域名，与上面 server 字段的地址一致
+
 
 # 分流组可自行创建或添加，proxies 参数下的节点名称，按需求自行增减，确保出现的节点名称在代理协议中可查找
 proxy-groups:
@@ -235,6 +277,9 @@ proxy-groups:
     - us-fd-zxing
     - luyou-steven9916
     - luyou-zxing
+    - 9916-us-kg
+    - zx9916-us-kg
+    - zxing-us-kg
       
 - name: 🌍选择代理
   type: select
@@ -252,6 +297,9 @@ proxy-groups:
     - us-fd-zxing
     - luyou-steven9916
     - luyou-zxing
+    - 9916-us-kg
+    - zx9916-us-kg
+    - zxing-us-kg
    
 # 代理规则可自行添加 
 rules:

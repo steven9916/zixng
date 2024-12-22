@@ -129,11 +129,11 @@ proxies:
   udp: false
   tls: true
   network: ws
-  servername: yg.9916.eu.org                         # SNI 域名，与下面 host 一致
+  servername: yg.9916.us.kg                         # SNI 域名，与下面 host 一致
   ws-opts:
     path: "/?ed=2560"                              # 自定义 path 路径
     headers:
-      Host: yg.9916.eu.org                           # Host 域名，与上面 server 字段的地址一致
+      Host: yg.9916.us.kg                           # Host 域名，与上面 server 字段的地址一致
 
 - name: vless-jp                               # 可以自定义节点名称
   type: vless

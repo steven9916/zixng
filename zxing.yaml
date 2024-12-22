@@ -65,62 +65,6 @@ rule-providers:
 # 当前 13 个主流协议节点配置模版，按需求修改，如不需要使用某协议节点，则无需删除，确保代理分流中没有该节点即可
 proxies:
 
-- name: vless-v1                               # 可以自定义节点名称
-  type: vless
-  server: 443.9916.eu.org                             # 解析的 IP / 域名或优选 IP / 域名
-  port: 443                                      # 自定义端口
-  uuid: c51b32f8-e06e-4905-ba0a-8ae01c2b66e0       # 自定义 UUID
-  udp: false
-  tls: true
-  network: ws
-  servername: 9916.eU.oRG                         # SNI 域名，与下面 Host 一致
-  ws-opts:
-    path: "/3FXAvOU4Y0SrO0oI"                              # 自定义 path 路径
-    headers:
-      Host: 9916.eu.org                           # Host 域名，与上面 server 字段的地址一致
-
-- name: vless-v2                              # 可以自定义节点名称
-  type: vless
-  server: 172.67.143.181                             # 解析的 IP / 域名或优选 IP / 域名
-  port: 443                                      # 自定义端口
-  uuid: c51b32f8-e06e-4905-ba0a-8ae01c2b66e0       # 自定义 UUID
-  udp: false
-  tls: true
-  network: ws
-  servername: 9916.EU.ORg                         # SNI 域名，与下面 Host 一致
-  ws-opts:
-    path: "/RTW5T33ek4h5jerv?ed=2560"                              # 自定义 path 路径
-    headers:
-      Host: 9916.eu.org                           # Host 域名，与上面 server 字段的地址一致
-
-- name: vless-v3                              # 可以自定义节点名称
-  type: vless
-  server: 172.67.165.132                             # 解析的 IP / 域名或优选 IP / 域名
-  port: 443                                      # 自定义端口
-  uuid: c51b32f8-e06e-4905-ba0a-8ae01c2b66e0       # 自定义 UUID
-  udp: false
-  tls: true
-  network: ws
-  servername: BPb.STeVEn9916.eu.OrG                         # SNI 域名，与下面 Host 一致
-  ws-opts:
-    path: "/pbDc8hZcR1df6ElX?ed=2560"                              # 自定义 path 路径
-    headers:
-      Host: bpb.steven9916.eu.org                           # Host 域名，与上面 server 字段的地址一致
-
-- name: vless-v4                           # 可以自定义节点名称
-  type: vless
-  server: 172.67.215.87                             # 解析的 IP / 域名或优选 IP / 域名
-  port: 443                                      # 自定义端口
-  uuid: c51b32f8-e06e-4905-ba0a-8ae01c2b66e0       # 自定义 UUID
-  udp: false
-  tls: true
-  network: ws
-  servername: BpB.zxIng.eU.ORG                         # SNI 域名，与下面 Host 一致
-  ws-opts:
-    path: "/AVCiMMXETW7lmjDu?ed=2560"                              # 自定义 path 路径
-    headers:
-      Host: bpb.zxing.eu.org                           # Host 域名，与上面 server 字段的地址一致
-
 - name: vless-hk                                   # 可以自定义节点名称
   type: vless
   server: hk.9916.eu.org                             # 解析的 IP / 域名或优选 IP / 域名
@@ -175,10 +119,6 @@ proxy-groups:
   interval: 300
   proxies:
 
-    - vless-v1
-    - vless-v2
-    - vless-v3
-    - vless-v4
     - vless-hk
     - vless-jp
     - vless-gb
@@ -189,10 +129,7 @@ proxy-groups:
   interval: 300
   tolerance: 50
   proxies:
-    - vless-v1
-    - vless-v2
-    - vless-v3
-    - vless-v4
+
     - vless-hk
     - vless-jp
     - vless-gb
@@ -203,21 +140,79 @@ proxy-groups:
     - 负载均衡                                            # 自定义添加的节点名称
     - 自动选择
     - DIRECT
-    - vless-v1
-    - vless-v2
-    - vless-v3
-    - vless-v4
+
     - vless-hk
     - vless-jp
     - vless-gb
    
 # 代理规则可自行添加 
 rules:
+  - DOMAIN-SUFFIX,gitlab.com,DIRECT
+  - DOMAIN-SUFFIX,cloudflare.com,DIRECT
+  - DOMAIN-SUFFIX,justcn2.top,DIRECT
+  - DOMAIN,pan.quaek.com,DIRECT
+  - DOMAIN,minbrowser.org,DIRECT
+  - DOMAIN,bpb.steven9916.eu.org,DIRECT  
+  - DOMAIN,9916.eu.org,DIRECT
+  - DOMAIN,bpb.zxing.eu.org,DIRECT
   - GEOIP,LAN,DIRECT
   - GEOIP,CN,DIRECT
-  - MATCH,🌍选择代理
   - RULE-SET,AD,REJECT
   - RULE-SET,EasyList,REJECT
   - RULE-SET,EasyListChina,REJECT
   - RULE-SET,EasyPrivacy,REJECT
   - RULE-SET,ProgramAD,REJECT
+  - DOMAIN-SUFFIX,tumblr.com,🌍选择代理
+  - DOMAIN-SUFFIX,potato.im,🌍选择代理
+  - GEOSITE,category-ads-all,REJECT
+  - GEOSITE,openai,🌍选择代理
+  - GEOSITE,anthropic,🌍选择代理
+  - GEOSITE,jetbrains-ai,🌍选择代理
+  - GEOSITE,perplexity,🌍选择代理
+  - GEOSITE,bilibili,DIRECT
+  - GEOSITE,youtube,🌍选择代理
+  - GEOSITE,google,🌍选择代理
+  - GEOIP,google,🌍选择代理
+  - GEOIP,private,DIRECT
+  - GEOSITE,geolocation-cn,DIRECT
+  - GEOIP,cn,DIRECT
+  - GEOIP,telegram,🌍选择代理
+  - GEOSITE,github,🌍选择代理
+  - GEOSITE,gitlab,🌍选择代理
+  - DOMAIN-SUFFIX,raw.githubusercontent.com,🌍选择代理
+  - GEOSITE,microsoft,🌍选择代理
+  - GEOSITE,apple,DIRECT
+  - GEOSITE,facebook,🌍选择代理
+  - GEOSITE,instagram,🌍选择代理
+  - GEOSITE,twitter,🌍选择代理
+  - GEOSITE,tiktok,🌍选择代理
+  - GEOSITE,linkedin,🌍选择代理
+  - GEOSITE,netflix,🌍选择代理
+  - GEOSITE,hulu,🌍选择代理
+  - GEOSITE,disney,🌍选择代理
+  - GEOSITE,hbo,🌍选择代理
+  - GEOSITE,amazon,🌍选择代理
+  - GEOSITE,spotify,🌍选择代理
+  - GEOSITE,bahamut,🌍选择代理
+  - GEOSITE,steam,🌍选择代理
+  - GEOSITE,epicgames,🌍选择代理
+  - GEOSITE,ea,🌍选择代理
+  - GEOSITE,ubisoft,🌍选择代理
+  - GEOSITE,blizzard,🌍选择代理
+  - GEOSITE,coursera,🌍选择代理
+  - GEOSITE,edx,🌍选择代理
+  - GEOSITE,udemy,🌍选择代理
+  - GEOSITE,khanacademy,🌍选择代理
+  - GEOSITE,category-scholar-!cn,🌍选择代理
+  - GEOSITE,paypal,🌍选择代理
+  - GEOSITE,visa,🌍选择代理
+  - GEOSITE,mastercard,🌍选择代理
+  - GEOSITE,stripe,🌍选择代理
+  - GEOSITE,wise,🌍选择代理
+  - GEOSITE,aws,🌍选择代理
+  - GEOSITE,azure,🌍选择代理
+  - GEOSITE,digitalocean,🌍选择代理
+  - GEOSITE,heroku,🌍选择代理
+  - GEOSITE,dropbox,🌍选择代理
+  - GEOSITE,geolocation-!cn,DIRECT
+  - MATCH,🌍选择代理

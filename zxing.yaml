@@ -336,7 +336,7 @@
         "RULE-SET,cn,DIRECT",
         "RULE-SET,private-cidr,DIRECT,no-resolve",
         "RULE-SET,cn-cidr,DIRECT",
-        "MATCH,✅ Selector"
+        "MATCH,DIRECT"
     ],
     "ntp": {
         "enable": true,

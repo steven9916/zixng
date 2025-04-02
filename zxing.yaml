@@ -88,7 +88,7 @@
         {
             "name": "VLESS-9916",
             "type": "vless",
-            "server": "443.zxing.eu.org",
+            "server": "443.9916.eu.org",
             "port": 443,
             "uuid": "c51b32f8-e06e-4905-ba0a-8ae01c2b66e0",
             "packet-encoding": "packetaddr",
@@ -113,7 +113,7 @@
         {
             "name": "VLESS-zxing",
             "type": "vless",
-            "server": "443.zxing.eu.org",
+            "server": "443.9916.eu.org",
             "port": 443,
             "uuid": "c51b32f8-e06e-4905-ba0a-8ae01c2b66e0",
             "packet-encoding": "packetaddr",
@@ -138,7 +138,7 @@
         {
             "name": "VLESS-steven9916",
             "type": "vless",
-            "server": "443.zxing.eu.org",
+            "server": "443.9916.eu.org",
             "port": 443,
             "uuid": "c51b32f8-e06e-4905-ba0a-8ae01c2b66e0",
             "packet-encoding": "packetaddr",
@@ -163,7 +163,7 @@
         {
             "name": "Trojan9916",
             "type": "trojan",
-            "server": "443.zxing.eu.org",
+            "server": "443.9916.eu.org",
             "port": 443,
             "password": "zx2009211846",
             "network": "ws",
@@ -186,7 +186,7 @@
         {
             "name": "Trojan-zxing",
             "type": "trojan",
-            "server": "443.zxing.eu.org",
+            "server": "443.9916.eu.org",
             "port": 443,
             "password": "zx2009211846",
             "network": "ws",
@@ -209,7 +209,7 @@
         {
             "name": "Trojan-steven9916",
             "type": "trojan",
-            "server": "443.zxing.eu.org",
+            "server": "443.9916.eu.org",
             "port": 443,
             "password": "zx2009211846",
             "network": "ws",

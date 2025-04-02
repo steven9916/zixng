@@ -121,14 +121,14 @@
             "network": "ws",
             "udp": true,
             "ws-opts": {
-                "path": "/z6AmAUDyY41rm0s0",
+                "path": "/?ed=2560",
                 "headers": {
-                    "Host": "zhou.zxing.eu.org"
+                    "Host": "kkk.zxing.eu.org"
                 },
                 "max-early-data": 2560,
                 "early-data-header-name": "Sec-WebSocket-Protocol"
             },
-            "servername": "zhoU.zXInG.Eu.ORg",
+            "servername": "kkk.zxing.eu.org",
             "alpn": [
                 "http/1.1"
             ],
@@ -146,14 +146,14 @@
             "network": "ws",
             "udp": true,
             "ws-opts": {
-                "path": "/1XJI7iYDEd3yM6jQ",
+                "path": "/?ed=2560",
                 "headers": {
-                    "Host": "zhou.steven9916.eu.org"
+                    "Host": "kkk.steven9916.eu.org"
                 },
                 "max-early-data": 2560,
                 "early-data-header-name": "Sec-WebSocket-Protocol"
             },
-            "servername": "ZhOU.StEvEn9916.EU.org",
+            "servername": "kkk.steven9916.eu.org",
             "alpn": [
                 "http/1.1"
             ],
@@ -169,14 +169,14 @@
             "network": "ws",
             "udp": true,
             "ws-opts": {
-                "path": "/tr2yNqu4Q8YmgyYp6r",
+                "path": "/?ed=2560",
                 "headers": {
-                    "Host": "zhou.9916.eu.org"
+                    "Host": "kkktr.9916.eu.org"
                 },
                 "max-early-data": 2560,
                 "early-data-header-name": "Sec-WebSocket-Protocol"
             },
-            "sni": "ZhoU.9916.eu.ORg",
+            "sni": "kkktr.9916.eu.org",
             "alpn": [
                 "http/1.1"
             ],
@@ -192,14 +192,14 @@
             "network": "ws",
             "udp": true,
             "ws-opts": {
-                "path": "/trkYut96ssHkVLK2tL",
+                "path": "/?ed=2560",
                 "headers": {
-                    "Host": "zhou.zxing.eu.org"
+                    "Host": "kkktr.zxing.eu.org"
                 },
                 "max-early-data": 2560,
                 "early-data-header-name": "Sec-WebSocket-Protocol"
             },
-            "sni": "ZHOU.zXinG.eu.org",
+            "sni": "kkktr.zxing.eu.org",
             "alpn": [
                 "http/1.1"
             ],
@@ -215,14 +215,14 @@
             "network": "ws",
             "udp": true,
             "ws-opts": {
-                "path": "/trrzOdzg8B7ZJxQlXn",
+                "path": "/?ed=2560",
                 "headers": {
-                    "Host": "zhou.steven9916.eu.org"
+                    "Host": "kkktr.steven9916.eu.org"
                 },
                 "max-early-data": 2560,
                 "early-data-header-name": "Sec-WebSocket-Protocol"
             },
-            "sni": "ZHou.STeVEn9916.Eu.ORg",
+            "sni": "kkktr.steven9916.eu.org",
             "alpn": [
                 "http/1.1"
             ],

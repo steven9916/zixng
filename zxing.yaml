@@ -1,224 +1,1023 @@
-# DNS 配置可自行修改
-port: 7890
-allow-lan: true
-mode: rule
-log-level: info
-unified-delay: true
-global-client-fingerprint: chrome
-dns:
-  enable: true
-  listen: :53
-  ipv6: true
-  enhanced-mode: fake-ip
-  fake-ip-range: 198.18.0.1/16
-  default-nameserver: 
-    - 223.5.5.5
-    - 114.114.114.114
-    - 8.8.8.8
-  nameserver:
-    - https://dns.alidns.com/dns-query
-    - https://doh.pub/dns-query
-  fallback:
-    - https://1.0.0.1/dns-query
-    - tls://dns.google
-  fallback-filter:
-    geoip: true
-    geoip-code: CN
-    ipcidr:
-      - 240.0.0.0/4
-      
-rule-providers:
-  AD:
-    type: http
-    behavior: domain
-    url: "https://raw.githubusercontent.com/earoftoast/clash-rules/main/AD.yaml"
-    path: ./rules/AD.yaml
-    interval: 86400
-    
-  EasyList:
-    type: http
-    behavior: domain
-    url: "https://raw.githubusercontent.com/earoftoast/clash-rules/main/EasyList.yaml"
-    path: ./rules/EasyList.yaml
-    interval: 86400
-    
-  EasyListChina:
-    type: http
-    behavior: domain
-    url: "https://raw.githubusercontent.com/earoftoast/clash-rules/main/EasyListChina.yaml"
-    path: ./rules/EasyListChina.yaml
-    interval: 86400
-
-  EasyPrivacy:
-    type: http
-    behavior: domain
-    url: "https://raw.githubusercontent.com/earoftoast/clash-rules/main/EasyPrivacy.yaml"
-    path: ./rules/EasyPrivacy.yaml
-    interval: 86400
-
-  ProgramAD:
-    type: http
-    behavior: domain
-    url: "https://raw.githubusercontent.com/earoftoast/clash-rules/main/ProgramAD.yaml"
-    path: ./rules/ProgramAD.yaml
-    interval: 86400
-# 当前 13 个主流协议节点配置模版，按需求修改，如不需要使用某协议节点，则无需删除，确保代理分流中没有该节点即可
-proxies:
-
-- name: vless-v1                               # 可以自定义节点名称
-  type: vless
-  server: 443.9916.eu.org                             # 解析的 IP / 域名或优选 IP / 域名
-  port: 443                                      # 自定义端口
-  uuid: c51b32f8-e06e-4905-ba0a-8ae01c2b66e0       # 自定义 UUID
-  udp: false
-  tls: true
-  network: ws
-  servername: 9916.eU.oRG                         # SNI 域名，与下面 Host 一致
-  ws-opts:
-    path: "/3FXAvOU4Y0SrO0oI"                              # 自定义 path 路径
-    headers:
-      Host: 9916.eu.org                           # Host 域名，与上面 server 字段的地址一致
-
-- name: vless-v2                              # 可以自定义节点名称
-  type: vless
-  server: 172.67.143.181                             # 解析的 IP / 域名或优选 IP / 域名
-  port: 443                                      # 自定义端口
-  uuid: c51b32f8-e06e-4905-ba0a-8ae01c2b66e0       # 自定义 UUID
-  udp: false
-  tls: true
-  network: ws
-  servername: 9916.EU.ORg                         # SNI 域名，与下面 Host 一致
-  ws-opts:
-    path: "/RTW5T33ek4h5jerv?ed=2560"                              # 自定义 path 路径
-    headers:
-      Host: 9916.eu.org                           # Host 域名，与上面 server 字段的地址一致
-
-- name: vless-v3                              # 可以自定义节点名称
-  type: vless
-  server: 172.67.165.132                             # 解析的 IP / 域名或优选 IP / 域名
-  port: 443                                      # 自定义端口
-  uuid: c51b32f8-e06e-4905-ba0a-8ae01c2b66e0       # 自定义 UUID
-  udp: false
-  tls: true
-  network: ws
-  servername: BPb.STeVEn9916.eu.OrG                         # SNI 域名，与下面 Host 一致
-  ws-opts:
-    path: "/pbDc8hZcR1df6ElX?ed=2560"                              # 自定义 path 路径
-    headers:
-      Host: bpb.steven9916.eu.org                           # Host 域名，与上面 server 字段的地址一致
-
-- name: vless-v4                           # 可以自定义节点名称
-  type: vless
-  server: 172.67.215.87                             # 解析的 IP / 域名或优选 IP / 域名
-  port: 443                                      # 自定义端口
-  uuid: c51b32f8-e06e-4905-ba0a-8ae01c2b66e0       # 自定义 UUID
-  udp: false
-  tls: true
-  network: ws
-  servername: BpB.zxIng.eU.ORG                         # SNI 域名，与下面 Host 一致
-  ws-opts:
-    path: "/AVCiMMXETW7lmjDu?ed=2560"                              # 自定义 path 路径
-    headers:
-      Host: bpb.zxing.eu.org                           # Host 域名，与上面 server 字段的地址一致
-
-- name: vless-hk                                   # 可以自定义节点名称
-  type: vless
-  server: hk.9916.eu.org                             # 解析的 IP / 域名或优选 IP / 域名
-  port: 443                                       # 自定义端口
-  uuid: c51b32f8-e06e-4905-ba0a-8ae01c2b66e0       # 自定义 UUID
-  udp: false
-  tls: true
-  network: ws
-  servername: 9916.eu.org                         # SNI 域名，与下面 host 一致
-  ws-opts:
-    path: "/O6LARdtCYFOKanPW"                              # 自定义 path 路径
-    headers:
-      Host: 9916.eu.org                           # Host 域名，与上面 server 字段的地址一致
-
-- name: vless-jp                               # 可以自定义节点名称
-  type: vless
-  server: rb.9916.eu.org                             # 解析的 IP / 域名或优选 IP / 域名
-  port: 443                                      # 自定义端口
-  uuid: c51b32f8-e06e-4905-ba0a-8ae01c2b66e0       # 自定义 UUID
-  alterId: 0
-  cipher: auto
-  udp: false
-  tls: true
-  network: ws
-  servername: 9916.eu.org                         # SNI 域名，与下面 host 一致
-  ws-opts:
-    path: "/qXmEXwcbFym8n0o0"                              # 自定义 path 路径
-    headers:
-      Host: 9916.eu.org                           # Host 域名，与上面 server 字段的地址一致
-
-- name: vless-gb                               # 可以自定义节点名称
-  type: vless
-  server: gb.9916.eu.org                             # 解析的 IP / 域名或优选 IP / 域名
-  port: 443                                      # 自定义端口
-  uuid: c51b32f8-e06e-4905-ba0a-8ae01c2b66e0       # 自定义 UUID
-  alterId: 0
-  cipher: auto
-  udp: false
-  tls: true
-  network: ws
-  servername: 9916.eu.org                         # SNI 域名，与下面 host 一致
-  ws-opts:
-    path: "/qXmEXwcbFym8n0o0"                              # 自定义 path 路径
-    headers:
-      Host: 9916.eu.org                           # Host 域名，与上面 server 字段的地址一致
-
-
-# 分流组可自行创建或添加，proxies 参数下的节点名称，按需求自行增减，确保出现的节点名称在代理协议中可查找
-proxy-groups:
-- name: 负载均衡
-  type: load-balance
-  url: http://www.gstatic.com/generate_204
-  interval: 300
-  proxies:
-
-    - vless-v1
-    - vless-v2
-    - vless-v3
-    - vless-v4
-    - vless-hk
-    - vless-jp
-    - vless-gb
-
-- name: 自动选择
-  type: url-test
-  url: http://www.gstatic.com/generate_204
-  interval: 300
-  tolerance: 50
-  proxies:
-    - vless-v1
-    - vless-v2
-    - vless-v3
-    - vless-v4
-    - vless-hk
-    - vless-jp
-    - vless-gb
-      
-- name: 🌍选择代理
-  type: select
-  proxies:
-    - 负载均衡                                            # 自定义添加的节点名称
-    - 自动选择
-    - DIRECT
-    - vless-v1
-    - vless-v2
-    - vless-v3
-    - vless-v4
-    - vless-hk
-    - vless-jp
-    - vless-gb
-   
-# 代理规则可自行添加 
-rules:
-  - GEOIP,LAN,DIRECT
-  - GEOIP,CN,DIRECT
-  - MATCH,🌍选择代理
-  - RULE-SET,AD,REJECT
-  - RULE-SET,EasyList,REJECT
-  - RULE-SET,EasyListChina,REJECT
-  - RULE-SET,EasyPrivacy,REJECT
-  - RULE-SET,ProgramAD,REJECT
+{
+    "mixed-port": 7890,
+    "ipv6": true,
+    "allow-lan": true,
+    "mode": "rule",
+    "log-level": "warning",
+    "disable-keep-alive": false,
+    "keep-alive-idle": 10,
+    "keep-alive-interval": 15,
+    "unified-delay": false,
+    "geo-auto-update": true,
+    "geo-update-interval": 168,
+    "external-controller": "127.0.0.1:9090",
+    "external-ui-url": "https://github.com/MetaCubeX/metacubexd/archive/refs/heads/gh-pages.zip",
+    "external-ui": "ui",
+    "external-controller-cors": {
+        "allow-origins": [
+            "*"
+        ],
+        "allow-private-network": true
+    },
+    "profile": {
+        "store-selected": true,
+        "store-fake-ip": true
+    },
+    "dns": {
+        "enable": true,
+        "listen": "0.0.0.0:1053",
+        "ipv6": true,
+        "respect-rules": true,
+        "use-system-hosts": false,
+        "nameserver": [
+            "https://8.8.8.8/dns-query#✅ Selector"
+        ],
+        "proxy-server-nameserver": [
+            "8.8.8.8#DIRECT"
+        ],
+        "nameserver-policy": {
+            "raw.githubusercontent.com": "8.8.8.8#DIRECT",
+            "time.apple.com": "8.8.8.8#DIRECT",
+            "rule-set:cn": [
+                "8.8.8.8#DIRECT"
+            ]
+        }
+    },
+    "tun": {
+        "enable": true,
+        "stack": "mixed",
+        "auto-route": true,
+        "strict-route": true,
+        "auto-detect-interface": true,
+        "dns-hijack": [
+            "any:53",
+            "tcp://any:53"
+        ],
+        "mtu": 9000
+    },
+    "sniffer": {
+        "enable": true,
+        "force-dns-mapping": true,
+        "parse-pure-ip": true,
+        "override-destination": false,
+        "sniff": {
+            "HTTP": {
+                "ports": [
+                    80,
+                    8080,
+                    8880,
+                    2052,
+                    2082,
+                    2086,
+                    2095
+                ]
+            },
+            "TLS": {
+                "ports": [
+                    443,
+                    8443,
+                    2053,
+                    2083,
+                    2087,
+                    2096
+                ]
+            }
+        }
+    },
+    "proxies": [
+        {
+            "name": "💦 1 - VLESS - Domain - 443",
+            "type": "vless",
+            "server": "zhou.steven9916.eu.org",
+            "port": 443,
+            "uuid": "c51b32f8-e06e-4905-ba0a-8ae01c2b66e0",
+            "packet-encoding": "packetaddr",
+            "tls": true,
+            "network": "ws",
+            "udp": true,
+            "ws-opts": {
+                "path": "/1XJI7iYDEd3yM6jQ",
+                "headers": {
+                    "Host": "zhou.steven9916.eu.org"
+                },
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol"
+            },
+            "servername": "ZhOU.StEvEn9916.EU.org",
+            "alpn": [
+                "http/1.1"
+            ],
+            "client-fingerprint": "random",
+            "skip-cert-verify": false
+        },
+        {
+            "name": "💦 2 - VLESS - Domain - 443",
+            "type": "vless",
+            "server": "www.speedtest.net",
+            "port": 443,
+            "uuid": "c51b32f8-e06e-4905-ba0a-8ae01c2b66e0",
+            "packet-encoding": "packetaddr",
+            "tls": true,
+            "network": "ws",
+            "udp": true,
+            "ws-opts": {
+                "path": "/Dr1L2tj1ymqjMYl9",
+                "headers": {
+                    "Host": "zhou.steven9916.eu.org"
+                },
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol"
+            },
+            "servername": "zHOU.stEVEN9916.EU.ORG",
+            "alpn": [
+                "http/1.1"
+            ],
+            "client-fingerprint": "random",
+            "skip-cert-verify": false
+        },
+        {
+            "name": "💦 3 - VLESS - IPv4 - 443",
+            "type": "vless",
+            "server": "104.21.16.1",
+            "port": 443,
+            "uuid": "c51b32f8-e06e-4905-ba0a-8ae01c2b66e0",
+            "packet-encoding": "packetaddr",
+            "tls": true,
+            "network": "ws",
+            "udp": true,
+            "ws-opts": {
+                "path": "/GcbVKwblSMbZAmgx",
+                "headers": {
+                    "Host": "zhou.steven9916.eu.org"
+                },
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol"
+            },
+            "servername": "Zhou.sTEvEN9916.Eu.Org",
+            "alpn": [
+                "http/1.1"
+            ],
+            "client-fingerprint": "random",
+            "skip-cert-verify": false
+        },
+        {
+            "name": "💦 4 - VLESS - IPv4 - 443",
+            "type": "vless",
+            "server": "104.21.112.1",
+            "port": 443,
+            "uuid": "c51b32f8-e06e-4905-ba0a-8ae01c2b66e0",
+            "packet-encoding": "packetaddr",
+            "tls": true,
+            "network": "ws",
+            "udp": true,
+            "ws-opts": {
+                "path": "/w5DqSKvg1T1oxCoA",
+                "headers": {
+                    "Host": "zhou.steven9916.eu.org"
+                },
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol"
+            },
+            "servername": "ZHou.STeVen9916.eu.oRg",
+            "alpn": [
+                "http/1.1"
+            ],
+            "client-fingerprint": "random",
+            "skip-cert-verify": false
+        },
+        {
+            "name": "💦 5 - VLESS - IPv4 - 443",
+            "type": "vless",
+            "server": "104.21.64.1",
+            "port": 443,
+            "uuid": "c51b32f8-e06e-4905-ba0a-8ae01c2b66e0",
+            "packet-encoding": "packetaddr",
+            "tls": true,
+            "network": "ws",
+            "udp": true,
+            "ws-opts": {
+                "path": "/Bsmv9R7pjgtJhPlB",
+                "headers": {
+                    "Host": "zhou.steven9916.eu.org"
+                },
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol"
+            },
+            "servername": "zhOU.STEVEN9916.eU.org",
+            "alpn": [
+                "http/1.1"
+            ],
+            "client-fingerprint": "random",
+            "skip-cert-verify": false
+        },
+        {
+            "name": "💦 6 - VLESS - IPv4 - 443",
+            "type": "vless",
+            "server": "104.21.80.1",
+            "port": 443,
+            "uuid": "c51b32f8-e06e-4905-ba0a-8ae01c2b66e0",
+            "packet-encoding": "packetaddr",
+            "tls": true,
+            "network": "ws",
+            "udp": true,
+            "ws-opts": {
+                "path": "/2XJAJag10MPXVLJp",
+                "headers": {
+                    "Host": "zhou.steven9916.eu.org"
+                },
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol"
+            },
+            "servername": "ZHOU.StEVEn9916.Eu.oRG",
+            "alpn": [
+                "http/1.1"
+            ],
+            "client-fingerprint": "random",
+            "skip-cert-verify": false
+        },
+        {
+            "name": "💦 7 - VLESS - IPv4 - 443",
+            "type": "vless",
+            "server": "104.21.48.1",
+            "port": 443,
+            "uuid": "c51b32f8-e06e-4905-ba0a-8ae01c2b66e0",
+            "packet-encoding": "packetaddr",
+            "tls": true,
+            "network": "ws",
+            "udp": true,
+            "ws-opts": {
+                "path": "/HRQV1BR6nthwDmWC",
+                "headers": {
+                    "Host": "zhou.steven9916.eu.org"
+                },
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol"
+            },
+            "servername": "zHoU.stevEN9916.eu.ORg",
+            "alpn": [
+                "http/1.1"
+            ],
+            "client-fingerprint": "random",
+            "skip-cert-verify": false
+        },
+        {
+            "name": "💦 8 - VLESS - IPv4 - 443",
+            "type": "vless",
+            "server": "104.21.32.1",
+            "port": 443,
+            "uuid": "c51b32f8-e06e-4905-ba0a-8ae01c2b66e0",
+            "packet-encoding": "packetaddr",
+            "tls": true,
+            "network": "ws",
+            "udp": true,
+            "ws-opts": {
+                "path": "/WTZOYYlvuU4n8Pgj",
+                "headers": {
+                    "Host": "zhou.steven9916.eu.org"
+                },
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol"
+            },
+            "servername": "zHou.sTevEN9916.eU.oRg",
+            "alpn": [
+                "http/1.1"
+            ],
+            "client-fingerprint": "random",
+            "skip-cert-verify": false
+        },
+        {
+            "name": "💦 9 - VLESS - IPv4 - 443",
+            "type": "vless",
+            "server": "104.21.96.1",
+            "port": 443,
+            "uuid": "c51b32f8-e06e-4905-ba0a-8ae01c2b66e0",
+            "packet-encoding": "packetaddr",
+            "tls": true,
+            "network": "ws",
+            "udp": true,
+            "ws-opts": {
+                "path": "/067tddS9PXDVJLWC",
+                "headers": {
+                    "Host": "zhou.steven9916.eu.org"
+                },
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol"
+            },
+            "servername": "zHou.STEVEN9916.Eu.org",
+            "alpn": [
+                "http/1.1"
+            ],
+            "client-fingerprint": "random",
+            "skip-cert-verify": false
+        },
+        {
+            "name": "💦 10 - VLESS - IPv6 - 443",
+            "type": "vless",
+            "server": "2606:4700:3030::6815:7001",
+            "port": 443,
+            "uuid": "c51b32f8-e06e-4905-ba0a-8ae01c2b66e0",
+            "packet-encoding": "packetaddr",
+            "tls": true,
+            "network": "ws",
+            "udp": true,
+            "ws-opts": {
+                "path": "/kNRcEta05HzP1Th7",
+                "headers": {
+                    "Host": "zhou.steven9916.eu.org"
+                },
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol"
+            },
+            "servername": "zHou.stEvEN9916.Eu.oRG",
+            "alpn": [
+                "http/1.1"
+            ],
+            "client-fingerprint": "random",
+            "skip-cert-verify": false
+        },
+        {
+            "name": "💦 11 - VLESS - IPv6 - 443",
+            "type": "vless",
+            "server": "2606:4700:3030::6815:1001",
+            "port": 443,
+            "uuid": "c51b32f8-e06e-4905-ba0a-8ae01c2b66e0",
+            "packet-encoding": "packetaddr",
+            "tls": true,
+            "network": "ws",
+            "udp": true,
+            "ws-opts": {
+                "path": "/mvn1x1rd9Ht91TMY",
+                "headers": {
+                    "Host": "zhou.steven9916.eu.org"
+                },
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol"
+            },
+            "servername": "ZhOu.sTeVEn9916.eU.Org",
+            "alpn": [
+                "http/1.1"
+            ],
+            "client-fingerprint": "random",
+            "skip-cert-verify": false
+        },
+        {
+            "name": "💦 12 - VLESS - IPv6 - 443",
+            "type": "vless",
+            "server": "2606:4700:3030::6815:3001",
+            "port": 443,
+            "uuid": "c51b32f8-e06e-4905-ba0a-8ae01c2b66e0",
+            "packet-encoding": "packetaddr",
+            "tls": true,
+            "network": "ws",
+            "udp": true,
+            "ws-opts": {
+                "path": "/7L6IdyWLpbQV5jkE",
+                "headers": {
+                    "Host": "zhou.steven9916.eu.org"
+                },
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol"
+            },
+            "servername": "Zhou.sTEveN9916.Eu.ORg",
+            "alpn": [
+                "http/1.1"
+            ],
+            "client-fingerprint": "random",
+            "skip-cert-verify": false
+        },
+        {
+            "name": "💦 13 - VLESS - IPv6 - 443",
+            "type": "vless",
+            "server": "2606:4700:3030::6815:6001",
+            "port": 443,
+            "uuid": "c51b32f8-e06e-4905-ba0a-8ae01c2b66e0",
+            "packet-encoding": "packetaddr",
+            "tls": true,
+            "network": "ws",
+            "udp": true,
+            "ws-opts": {
+                "path": "/cDfkjS6FnlTCC3pG",
+                "headers": {
+                    "Host": "zhou.steven9916.eu.org"
+                },
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol"
+            },
+            "servername": "zhou.STeVeN9916.eU.org",
+            "alpn": [
+                "http/1.1"
+            ],
+            "client-fingerprint": "random",
+            "skip-cert-verify": false
+        },
+        {
+            "name": "💦 14 - VLESS - IPv6 - 443",
+            "type": "vless",
+            "server": "2606:4700:3030::6815:5001",
+            "port": 443,
+            "uuid": "c51b32f8-e06e-4905-ba0a-8ae01c2b66e0",
+            "packet-encoding": "packetaddr",
+            "tls": true,
+            "network": "ws",
+            "udp": true,
+            "ws-opts": {
+                "path": "/aOinslgwLu0e47Yu",
+                "headers": {
+                    "Host": "zhou.steven9916.eu.org"
+                },
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol"
+            },
+            "servername": "zHou.steven9916.eU.ORg",
+            "alpn": [
+                "http/1.1"
+            ],
+            "client-fingerprint": "random",
+            "skip-cert-verify": false
+        },
+        {
+            "name": "💦 15 - VLESS - IPv6 - 443",
+            "type": "vless",
+            "server": "2606:4700:3030::6815:4001",
+            "port": 443,
+            "uuid": "c51b32f8-e06e-4905-ba0a-8ae01c2b66e0",
+            "packet-encoding": "packetaddr",
+            "tls": true,
+            "network": "ws",
+            "udp": true,
+            "ws-opts": {
+                "path": "/AT4f4pMm8zB5VHSk",
+                "headers": {
+                    "Host": "zhou.steven9916.eu.org"
+                },
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol"
+            },
+            "servername": "ZhOu.sTevEn9916.EU.OrG",
+            "alpn": [
+                "http/1.1"
+            ],
+            "client-fingerprint": "random",
+            "skip-cert-verify": false
+        },
+        {
+            "name": "💦 16 - VLESS - IPv6 - 443",
+            "type": "vless",
+            "server": "2606:4700:3030::6815:2001",
+            "port": 443,
+            "uuid": "c51b32f8-e06e-4905-ba0a-8ae01c2b66e0",
+            "packet-encoding": "packetaddr",
+            "tls": true,
+            "network": "ws",
+            "udp": true,
+            "ws-opts": {
+                "path": "/29EEkC2Bd5lVeVOb",
+                "headers": {
+                    "Host": "zhou.steven9916.eu.org"
+                },
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol"
+            },
+            "servername": "zhOU.sTEvEN9916.eU.orG",
+            "alpn": [
+                "http/1.1"
+            ],
+            "client-fingerprint": "random",
+            "skip-cert-verify": false
+        },
+        {
+            "name": "💦 1 - Trojan - Domain - 443",
+            "type": "trojan",
+            "server": "zhou.steven9916.eu.org",
+            "port": 443,
+            "password": "zx2009211846",
+            "network": "ws",
+            "udp": true,
+            "ws-opts": {
+                "path": "/trrzOdzg8B7ZJxQlXn",
+                "headers": {
+                    "Host": "zhou.steven9916.eu.org"
+                },
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol"
+            },
+            "sni": "ZHou.STeVEn9916.Eu.ORg",
+            "alpn": [
+                "http/1.1"
+            ],
+            "client-fingerprint": "random",
+            "skip-cert-verify": false
+        },
+        {
+            "name": "💦 2 - Trojan - Domain - 443",
+            "type": "trojan",
+            "server": "www.speedtest.net",
+            "port": 443,
+            "password": "zx2009211846",
+            "network": "ws",
+            "udp": true,
+            "ws-opts": {
+                "path": "/trdaQ0iLU52ex01jX0",
+                "headers": {
+                    "Host": "zhou.steven9916.eu.org"
+                },
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol"
+            },
+            "sni": "ZHoU.stEVen9916.eU.oRg",
+            "alpn": [
+                "http/1.1"
+            ],
+            "client-fingerprint": "random",
+            "skip-cert-verify": false
+        },
+        {
+            "name": "💦 3 - Trojan - IPv4 - 443",
+            "type": "trojan",
+            "server": "104.21.16.1",
+            "port": 443,
+            "password": "zx2009211846",
+            "network": "ws",
+            "udp": true,
+            "ws-opts": {
+                "path": "/trqfU7OsngQoYyEsYr",
+                "headers": {
+                    "Host": "zhou.steven9916.eu.org"
+                },
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol"
+            },
+            "sni": "zHou.steVen9916.Eu.orG",
+            "alpn": [
+                "http/1.1"
+            ],
+            "client-fingerprint": "random",
+            "skip-cert-verify": false
+        },
+        {
+            "name": "💦 4 - Trojan - IPv4 - 443",
+            "type": "trojan",
+            "server": "104.21.112.1",
+            "port": 443,
+            "password": "zx2009211846",
+            "network": "ws",
+            "udp": true,
+            "ws-opts": {
+                "path": "/trX7yjj2UXTmSadXzV",
+                "headers": {
+                    "Host": "zhou.steven9916.eu.org"
+                },
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol"
+            },
+            "sni": "ZHoU.STeVen9916.eU.oRg",
+            "alpn": [
+                "http/1.1"
+            ],
+            "client-fingerprint": "random",
+            "skip-cert-verify": false
+        },
+        {
+            "name": "💦 5 - Trojan - IPv4 - 443",
+            "type": "trojan",
+            "server": "104.21.64.1",
+            "port": 443,
+            "password": "zx2009211846",
+            "network": "ws",
+            "udp": true,
+            "ws-opts": {
+                "path": "/truExhwNfUPZqexAZN",
+                "headers": {
+                    "Host": "zhou.steven9916.eu.org"
+                },
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol"
+            },
+            "sni": "ZHou.stEVEN9916.eU.OrG",
+            "alpn": [
+                "http/1.1"
+            ],
+            "client-fingerprint": "random",
+            "skip-cert-verify": false
+        },
+        {
+            "name": "💦 6 - Trojan - IPv4 - 443",
+            "type": "trojan",
+            "server": "104.21.80.1",
+            "port": 443,
+            "password": "zx2009211846",
+            "network": "ws",
+            "udp": true,
+            "ws-opts": {
+                "path": "/trd1SM3TeSABygmWTD",
+                "headers": {
+                    "Host": "zhou.steven9916.eu.org"
+                },
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol"
+            },
+            "sni": "ZhoU.sTeVen9916.Eu.orG",
+            "alpn": [
+                "http/1.1"
+            ],
+            "client-fingerprint": "random",
+            "skip-cert-verify": false
+        },
+        {
+            "name": "💦 7 - Trojan - IPv4 - 443",
+            "type": "trojan",
+            "server": "104.21.48.1",
+            "port": 443,
+            "password": "zx2009211846",
+            "network": "ws",
+            "udp": true,
+            "ws-opts": {
+                "path": "/trGK4gfpR1miEUfTua",
+                "headers": {
+                    "Host": "zhou.steven9916.eu.org"
+                },
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol"
+            },
+            "sni": "zhOu.steVEN9916.EU.OrG",
+            "alpn": [
+                "http/1.1"
+            ],
+            "client-fingerprint": "random",
+            "skip-cert-verify": false
+        },
+        {
+            "name": "💦 8 - Trojan - IPv4 - 443",
+            "type": "trojan",
+            "server": "104.21.32.1",
+            "port": 443,
+            "password": "zx2009211846",
+            "network": "ws",
+            "udp": true,
+            "ws-opts": {
+                "path": "/trDy1P9BT3no8Es7ag",
+                "headers": {
+                    "Host": "zhou.steven9916.eu.org"
+                },
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol"
+            },
+            "sni": "zHOU.StEvEn9916.Eu.oRg",
+            "alpn": [
+                "http/1.1"
+            ],
+            "client-fingerprint": "random",
+            "skip-cert-verify": false
+        },
+        {
+            "name": "💦 9 - Trojan - IPv4 - 443",
+            "type": "trojan",
+            "server": "104.21.96.1",
+            "port": 443,
+            "password": "zx2009211846",
+            "network": "ws",
+            "udp": true,
+            "ws-opts": {
+                "path": "/trqiLaTthf2BBIjdbH",
+                "headers": {
+                    "Host": "zhou.steven9916.eu.org"
+                },
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol"
+            },
+            "sni": "ZhOu.stEven9916.eU.orG",
+            "alpn": [
+                "http/1.1"
+            ],
+            "client-fingerprint": "random",
+            "skip-cert-verify": false
+        },
+        {
+            "name": "💦 10 - Trojan - IPv6 - 443",
+            "type": "trojan",
+            "server": "2606:4700:3030::6815:7001",
+            "port": 443,
+            "password": "zx2009211846",
+            "network": "ws",
+            "udp": true,
+            "ws-opts": {
+                "path": "/trspMy3s1bFWCkg4QM",
+                "headers": {
+                    "Host": "zhou.steven9916.eu.org"
+                },
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol"
+            },
+            "sni": "zHOu.sTEVeN9916.eU.ORg",
+            "alpn": [
+                "http/1.1"
+            ],
+            "client-fingerprint": "random",
+            "skip-cert-verify": false
+        },
+        {
+            "name": "💦 11 - Trojan - IPv6 - 443",
+            "type": "trojan",
+            "server": "2606:4700:3030::6815:1001",
+            "port": 443,
+            "password": "zx2009211846",
+            "network": "ws",
+            "udp": true,
+            "ws-opts": {
+                "path": "/trW9xNQssKCuoIzlKR",
+                "headers": {
+                    "Host": "zhou.steven9916.eu.org"
+                },
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol"
+            },
+            "sni": "ZhOu.stevEN9916.Eu.orG",
+            "alpn": [
+                "http/1.1"
+            ],
+            "client-fingerprint": "random",
+            "skip-cert-verify": false
+        },
+        {
+            "name": "💦 12 - Trojan - IPv6 - 443",
+            "type": "trojan",
+            "server": "2606:4700:3030::6815:3001",
+            "port": 443,
+            "password": "zx2009211846",
+            "network": "ws",
+            "udp": true,
+            "ws-opts": {
+                "path": "/trcsMyMBgS7oe1j4uc",
+                "headers": {
+                    "Host": "zhou.steven9916.eu.org"
+                },
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol"
+            },
+            "sni": "ZHou.steVEN9916.Eu.oRG",
+            "alpn": [
+                "http/1.1"
+            ],
+            "client-fingerprint": "random",
+            "skip-cert-verify": false
+        },
+        {
+            "name": "💦 13 - Trojan - IPv6 - 443",
+            "type": "trojan",
+            "server": "2606:4700:3030::6815:6001",
+            "port": 443,
+            "password": "zx2009211846",
+            "network": "ws",
+            "udp": true,
+            "ws-opts": {
+                "path": "/trMOT0BJSQcPIt2nSf",
+                "headers": {
+                    "Host": "zhou.steven9916.eu.org"
+                },
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol"
+            },
+            "sni": "ZhoU.StEVen9916.EU.ORG",
+            "alpn": [
+                "http/1.1"
+            ],
+            "client-fingerprint": "random",
+            "skip-cert-verify": false
+        },
+        {
+            "name": "💦 14 - Trojan - IPv6 - 443",
+            "type": "trojan",
+            "server": "2606:4700:3030::6815:5001",
+            "port": 443,
+            "password": "zx2009211846",
+            "network": "ws",
+            "udp": true,
+            "ws-opts": {
+                "path": "/trHO6HJIxP7YpbhFYH",
+                "headers": {
+                    "Host": "zhou.steven9916.eu.org"
+                },
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol"
+            },
+            "sni": "ZHou.STevEN9916.EU.Org",
+            "alpn": [
+                "http/1.1"
+            ],
+            "client-fingerprint": "random",
+            "skip-cert-verify": false
+        },
+        {
+            "name": "💦 15 - Trojan - IPv6 - 443",
+            "type": "trojan",
+            "server": "2606:4700:3030::6815:4001",
+            "port": 443,
+            "password": "zx2009211846",
+            "network": "ws",
+            "udp": true,
+            "ws-opts": {
+                "path": "/trb8H5F60117f8kEEW",
+                "headers": {
+                    "Host": "zhou.steven9916.eu.org"
+                },
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol"
+            },
+            "sni": "zHOu.stEVen9916.eu.OrG",
+            "alpn": [
+                "http/1.1"
+            ],
+            "client-fingerprint": "random",
+            "skip-cert-verify": false
+        },
+        {
+            "name": "💦 16 - Trojan - IPv6 - 443",
+            "type": "trojan",
+            "server": "2606:4700:3030::6815:2001",
+            "port": 443,
+            "password": "zx2009211846",
+            "network": "ws",
+            "udp": true,
+            "ws-opts": {
+                "path": "/trR5bKdtLwgeSkYfgn",
+                "headers": {
+                    "Host": "zhou.steven9916.eu.org"
+                },
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol"
+            },
+            "sni": "zhoU.sTeVEn9916.eU.orG",
+            "alpn": [
+                "http/1.1"
+            ],
+            "client-fingerprint": "random",
+            "skip-cert-verify": false
+        }
+    ],
+    "proxy-groups": [
+        {
+            "name": "✅ Selector",
+            "type": "select",
+            "proxies": [
+                "💦 Best Ping 💥",
+                "💦 1 - VLESS - Domain - 443",
+                "💦 2 - VLESS - Domain - 443",
+                "💦 3 - VLESS - IPv4 - 443",
+                "💦 4 - VLESS - IPv4 - 443",
+                "💦 5 - VLESS - IPv4 - 443",
+                "💦 6 - VLESS - IPv4 - 443",
+                "💦 7 - VLESS - IPv4 - 443",
+                "💦 8 - VLESS - IPv4 - 443",
+                "💦 9 - VLESS - IPv4 - 443",
+                "💦 10 - VLESS - IPv6 - 443",
+                "💦 11 - VLESS - IPv6 - 443",
+                "💦 12 - VLESS - IPv6 - 443",
+                "💦 13 - VLESS - IPv6 - 443",
+                "💦 14 - VLESS - IPv6 - 443",
+                "💦 15 - VLESS - IPv6 - 443",
+                "💦 16 - VLESS - IPv6 - 443",
+                "💦 1 - Trojan - Domain - 443",
+                "💦 2 - Trojan - Domain - 443",
+                "💦 3 - Trojan - IPv4 - 443",
+                "💦 4 - Trojan - IPv4 - 443",
+                "💦 5 - Trojan - IPv4 - 443",
+                "💦 6 - Trojan - IPv4 - 443",
+                "💦 7 - Trojan - IPv4 - 443",
+                "💦 8 - Trojan - IPv4 - 443",
+                "💦 9 - Trojan - IPv4 - 443",
+                "💦 10 - Trojan - IPv6 - 443",
+                "💦 11 - Trojan - IPv6 - 443",
+                "💦 12 - Trojan - IPv6 - 443",
+                "💦 13 - Trojan - IPv6 - 443",
+                "💦 14 - Trojan - IPv6 - 443",
+                "💦 15 - Trojan - IPv6 - 443",
+                "💦 16 - Trojan - IPv6 - 443"
+            ]
+        },
+        {
+            "name": "💦 Best Ping 💥",
+            "type": "url-test",
+            "url": "https://www.gstatic.com/generate_204",
+            "interval": 30,
+            "tolerance": 50,
+            "proxies": [
+                "💦 1 - VLESS - Domain - 443",
+                "💦 2 - VLESS - Domain - 443",
+                "💦 3 - VLESS - IPv4 - 443",
+                "💦 4 - VLESS - IPv4 - 443",
+                "💦 5 - VLESS - IPv4 - 443",
+                "💦 6 - VLESS - IPv4 - 443",
+                "💦 7 - VLESS - IPv4 - 443",
+                "💦 8 - VLESS - IPv4 - 443",
+                "💦 9 - VLESS - IPv4 - 443",
+                "💦 10 - VLESS - IPv6 - 443",
+                "💦 11 - VLESS - IPv6 - 443",
+                "💦 12 - VLESS - IPv6 - 443",
+                "💦 13 - VLESS - IPv6 - 443",
+                "💦 14 - VLESS - IPv6 - 443",
+                "💦 15 - VLESS - IPv6 - 443",
+                "💦 16 - VLESS - IPv6 - 443",
+                "💦 1 - Trojan - Domain - 443",
+                "💦 2 - Trojan - Domain - 443",
+                "💦 3 - Trojan - IPv4 - 443",
+                "💦 4 - Trojan - IPv4 - 443",
+                "💦 5 - Trojan - IPv4 - 443",
+                "💦 6 - Trojan - IPv4 - 443",
+                "💦 7 - Trojan - IPv4 - 443",
+                "💦 8 - Trojan - IPv4 - 443",
+                "💦 9 - Trojan - IPv4 - 443",
+                "💦 10 - Trojan - IPv6 - 443",
+                "💦 11 - Trojan - IPv6 - 443",
+                "💦 12 - Trojan - IPv6 - 443",
+                "💦 13 - Trojan - IPv6 - 443",
+                "💦 14 - Trojan - IPv6 - 443",
+                "💦 15 - Trojan - IPv6 - 443",
+                "💦 16 - Trojan - IPv6 - 443"
+            ]
+        }
+    ],
+    "rule-providers": {
+        "private": {
+            "type": "http",
+            "format": "yaml",
+            "behavior": "domain",
+            "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/private.yaml",
+            "path": "./ruleset/private.yaml",
+            "interval": 86400
+        },
+        "private-cidr": {
+            "type": "http",
+            "format": "yaml",
+            "behavior": "ipcidr",
+            "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/private.yaml",
+            "path": "./ruleset/private-cidr.yaml",
+            "interval": 86400
+        },
+        "cn": {
+            "type": "http",
+            "format": "yaml",
+            "behavior": "domain",
+            "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/cn.yaml",
+            "path": "./ruleset/cn.yaml",
+            "interval": 86400
+        },
+        "cn-cidr": {
+            "type": "http",
+            "format": "yaml",
+            "behavior": "ipcidr",
+            "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/cn.yaml",
+            "path": "./ruleset/cn-cidr.yaml",
+            "interval": 86400
+        },
+        "malware": {
+            "type": "http",
+            "format": "text",
+            "behavior": "domain",
+            "url": "https://raw.githubusercontent.com/Chocolate4U/Iran-clash-rules/release/malware.txt",
+            "path": "./ruleset/malware.txt",
+            "interval": 86400
+        },
+        "phishing": {
+            "type": "http",
+            "format": "text",
+            "behavior": "domain",
+            "url": "https://raw.githubusercontent.com/Chocolate4U/Iran-clash-rules/release/phishing.txt",
+            "path": "./ruleset/phishing.txt",
+            "interval": 86400
+        },
+        "cryptominers": {
+            "type": "http",
+            "format": "text",
+            "behavior": "domain",
+            "url": "https://raw.githubusercontent.com/Chocolate4U/Iran-clash-rules/release/cryptominers.txt",
+            "path": "./ruleset/cryptominers.txt",
+            "interval": 86400
+        },
+        "ads": {
+            "type": "http",
+            "format": "text",
+            "behavior": "domain",
+            "url": "https://raw.githubusercontent.com/Chocolate4U/Iran-clash-rules/release/ads.txt",
+            "path": "./ruleset/ads.txt",
+            "interval": 86400
+        }
+    },
+    "rules": [
+        "OR,((IP-CIDR,10.10.34.34/32),(IP-CIDR,10.10.34.35/32),(IP-CIDR,10.10.34.36/32)),REJECT",
+        "RULE-SET,malware,REJECT",
+        "RULE-SET,phishing,REJECT",
+        "RULE-SET,cryptominers,REJECT",
+        "RULE-SET,ads,REJECT",
+        "RULE-SET,private,DIRECT",
+        "RULE-SET,cn,DIRECT",
+        "RULE-SET,private-cidr,DIRECT,no-resolve",
+        "RULE-SET,cn-cidr,DIRECT",
+        "MATCH,✅ Selector"
+    ],
+    "ntp": {
+        "enable": true,
+        "server": "time.apple.com",
+        "port": 123,
+        "interval": 30
+    }
+}

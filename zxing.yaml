@@ -30,7 +30,7 @@
         "respect-rules": true,
         "use-system-hosts": false,
         "nameserver": [
-            "https://8.8.8.8/dns-query#✅ Selector"
+            "https://8.8.8.8/dns-query#选择"
         ],
         "proxy-server-nameserver": [
             "8.8.8.8#DIRECT"
@@ -336,7 +336,7 @@
         "RULE-SET,cn,DIRECT",
         "RULE-SET,private-cidr,DIRECT,no-resolve",
         "RULE-SET,cn-cidr,DIRECT",
-        "MATCH,✅ Selector"
+        "MATCH,选择"
     ],
     "ntp": {
         "enable": true,

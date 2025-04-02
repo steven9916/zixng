@@ -86,9 +86,9 @@
     },
     "proxies": [
         {
-            "name": "💦 1 - VLESS - Domain - 443",
+            "name": "VLESS-9916",
             "type": "vless",
-            "server": "zhou.9916.eu.org",
+            "server": "443.zxing.eu.org",
             "port": 443,
             "uuid": "c51b32f8-e06e-4905-ba0a-8ae01c2b66e0",
             "packet-encoding": "packetaddr",
@@ -111,9 +111,9 @@
             "skip-cert-verify": false
         },
         {
-            "name": "💦 2 - VLESS - Domain - 443",
+            "name": "VLESS-zxing",
             "type": "vless",
-            "server": "www.speedtest.net",
+            "server": "443.zxing.eu.org",
             "port": 443,
             "uuid": "c51b32f8-e06e-4905-ba0a-8ae01c2b66e0",
             "packet-encoding": "packetaddr",
@@ -121,14 +121,14 @@
             "network": "ws",
             "udp": true,
             "ws-opts": {
-                "path": "/FhGwJuUJaLIyKRzX",
+                "path": "/z6AmAUDyY41rm0s0",
                 "headers": {
-                    "Host": "zhou.9916.eu.org"
+                    "Host": "zhou.zxing.eu.org"
                 },
                 "max-early-data": 2560,
                 "early-data-header-name": "Sec-WebSocket-Protocol"
             },
-            "servername": "ZhOU.9916.Eu.Org",
+            "servername": "zhoU.zXInG.Eu.ORg",
             "alpn": [
                 "http/1.1"
             ],
@@ -136,9 +136,9 @@
             "skip-cert-verify": false
         },
         {
-            "name": "💦 3 - VLESS - IPv4 - 443",
+            "name": "VLESS-steven9916",
             "type": "vless",
-            "server": "172.67.143.181",
+            "server": "443.zxing.eu.org",
             "port": 443,
             "uuid": "c51b32f8-e06e-4905-ba0a-8ae01c2b66e0",
             "packet-encoding": "packetaddr",
@@ -146,14 +146,14 @@
             "network": "ws",
             "udp": true,
             "ws-opts": {
-                "path": "/IEwnuhtRIR4nVnlU",
+                "path": "/1XJI7iYDEd3yM6jQ",
                 "headers": {
-                    "Host": "zhou.9916.eu.org"
+                    "Host": "zhou.steven9916.eu.org"
                 },
                 "max-early-data": 2560,
                 "early-data-header-name": "Sec-WebSocket-Protocol"
             },
-            "servername": "zHoU.9916.EU.Org",
+            "servername": "ZhOU.StEvEn9916.EU.org",
             "alpn": [
                 "http/1.1"
             ],
@@ -161,84 +161,9 @@
             "skip-cert-verify": false
         },
         {
-            "name": "💦 4 - VLESS - IPv4 - 443",
-            "type": "vless",
-            "server": "104.21.71.55",
-            "port": 443,
-            "uuid": "c51b32f8-e06e-4905-ba0a-8ae01c2b66e0",
-            "packet-encoding": "packetaddr",
-            "tls": true,
-            "network": "ws",
-            "udp": true,
-            "ws-opts": {
-                "path": "/F9lp4Bl95v6oCbvV",
-                "headers": {
-                    "Host": "zhou.9916.eu.org"
-                },
-                "max-early-data": 2560,
-                "early-data-header-name": "Sec-WebSocket-Protocol"
-            },
-            "servername": "zHOU.9916.eU.oRG",
-            "alpn": [
-                "http/1.1"
-            ],
-            "client-fingerprint": "random",
-            "skip-cert-verify": false
-        },
-        {
-            "name": "💦 5 - VLESS - IPv6 - 443",
-            "type": "vless",
-            "server": "2606:4700:3031::6815:4737",
-            "port": 443,
-            "uuid": "c51b32f8-e06e-4905-ba0a-8ae01c2b66e0",
-            "packet-encoding": "packetaddr",
-            "tls": true,
-            "network": "ws",
-            "udp": true,
-            "ws-opts": {
-                "path": "/uYAmSRNnLFp0jj7O",
-                "headers": {
-                    "Host": "zhou.9916.eu.org"
-                },
-                "max-early-data": 2560,
-                "early-data-header-name": "Sec-WebSocket-Protocol"
-            },
-            "servername": "zHoU.9916.eU.ORG",
-            "alpn": [
-                "http/1.1"
-            ],
-            "client-fingerprint": "random",
-            "skip-cert-verify": false
-        },
-        {
-            "name": "💦 6 - VLESS - IPv6 - 443",
-            "type": "vless",
-            "server": "2606:4700:3036::ac43:8fb5",
-            "port": 443,
-            "uuid": "c51b32f8-e06e-4905-ba0a-8ae01c2b66e0",
-            "packet-encoding": "packetaddr",
-            "tls": true,
-            "network": "ws",
-            "udp": true,
-            "ws-opts": {
-                "path": "/cQP0ybvUrWfwnZ0T",
-                "headers": {
-                    "Host": "zhou.9916.eu.org"
-                },
-                "max-early-data": 2560,
-                "early-data-header-name": "Sec-WebSocket-Protocol"
-            },
-            "servername": "ZhoU.9916.EU.ORG",
-            "alpn": [
-                "http/1.1"
-            ],
-            "client-fingerprint": "random",
-            "skip-cert-verify": false
-        },
-        {
-            "name": "💦 1 - Trojan - Domain - 443",
+            "name": "Trojan9916",
             "type": "trojan",
-            "server": "zhou.9916.eu.org",
+            "server": "443.zxing.eu.org",
             "port": 443,
             "password": "zx2009211846",
             "network": "ws",
@@ -259,22 +184,22 @@
             "skip-cert-verify": false
         },
         {
-            "name": "💦 2 - Trojan - Domain - 443",
+            "name": "Trojan-zxing",
             "type": "trojan",
-            "server": "www.speedtest.net",
+            "server": "443.zxing.eu.org",
             "port": 443,
             "password": "zx2009211846",
             "network": "ws",
             "udp": true,
             "ws-opts": {
-                "path": "/tri2EfouwasnWxppxJ",
+                "path": "/trkYut96ssHkVLK2tL",
                 "headers": {
-                    "Host": "zhou.9916.eu.org"
+                    "Host": "zhou.zxing.eu.org"
                 },
                 "max-early-data": 2560,
                 "early-data-header-name": "Sec-WebSocket-Protocol"
             },
-            "sni": "ZHou.9916.eu.OrG",
+            "sni": "ZHOU.zXinG.eu.org",
             "alpn": [
                 "http/1.1"
             ],
@@ -282,137 +207,56 @@
             "skip-cert-verify": false
         },
         {
-            "name": "💦 3 - Trojan - IPv4 - 443",
+            "name": "Trojan-steven9916",
             "type": "trojan",
-            "server": "172.67.143.181",
+            "server": "443.zxing.eu.org",
             "port": 443,
             "password": "zx2009211846",
             "network": "ws",
             "udp": true,
             "ws-opts": {
-                "path": "/trtrFo9Up7ijAwrnnB",
+                "path": "/trrzOdzg8B7ZJxQlXn",
                 "headers": {
-                    "Host": "zhou.9916.eu.org"
+                    "Host": "zhou.steven9916.eu.org"
                 },
                 "max-early-data": 2560,
                 "early-data-header-name": "Sec-WebSocket-Protocol"
             },
-            "sni": "zHoU.9916.eU.Org",
+            "sni": "ZHou.STeVEn9916.Eu.ORg",
             "alpn": [
                 "http/1.1"
             ],
             "client-fingerprint": "random",
             "skip-cert-verify": false
         },
-        {
-            "name": "💦 4 - Trojan - IPv4 - 443",
-            "type": "trojan",
-            "server": "104.21.71.55",
-            "port": 443,
-            "password": "zx2009211846",
-            "network": "ws",
-            "udp": true,
-            "ws-opts": {
-                "path": "/tr9rBEXSNoCraFdhSj",
-                "headers": {
-                    "Host": "zhou.9916.eu.org"
-                },
-                "max-early-data": 2560,
-                "early-data-header-name": "Sec-WebSocket-Protocol"
-            },
-            "sni": "zHoU.9916.eu.OrG",
-            "alpn": [
-                "http/1.1"
-            ],
-            "client-fingerprint": "random",
-            "skip-cert-verify": false
-        },
-        {
-            "name": "💦 5 - Trojan - IPv6 - 443",
-            "type": "trojan",
-            "server": "2606:4700:3031::6815:4737",
-            "port": 443,
-            "password": "zx2009211846",
-            "network": "ws",
-            "udp": true,
-            "ws-opts": {
-                "path": "/trXOpuuXhATWvpTaGc",
-                "headers": {
-                    "Host": "zhou.9916.eu.org"
-                },
-                "max-early-data": 2560,
-                "early-data-header-name": "Sec-WebSocket-Protocol"
-            },
-            "sni": "ZhOu.9916.eU.Org",
-            "alpn": [
-                "http/1.1"
-            ],
-            "client-fingerprint": "random",
-            "skip-cert-verify": false
-        },
-        {
-            "name": "💦 6 - Trojan - IPv6 - 443",
-            "type": "trojan",
-            "server": "2606:4700:3036::ac43:8fb5",
-            "port": 443,
-            "password": "zx2009211846",
-            "network": "ws",
-            "udp": true,
-            "ws-opts": {
-                "path": "/tr1FzS7rGBki41Tc8P",
-                "headers": {
-                    "Host": "zhou.9916.eu.org"
-                },
-                "max-early-data": 2560,
-                "early-data-header-name": "Sec-WebSocket-Protocol"
-            },
-            "sni": "ZHOU.9916.eU.ORG",
-            "alpn": [
-                "http/1.1"
-            ],
-            "client-fingerprint": "random",
-            "skip-cert-verify": false
-        }
     ],
     "proxy-groups": [
         {
-            "name": "✅ Selector",
+            "name": "选择",
             "type": "select",
             "proxies": [
-                "💦 Best Ping 💥",
-                "💦 1 - VLESS - Domain - 443",
-                "💦 2 - VLESS - Domain - 443",
-                "💦 3 - VLESS - IPv4 - 443",
-                "💦 4 - VLESS - IPv4 - 443",
-                "💦 5 - VLESS - IPv6 - 443",
-                "💦 6 - VLESS - IPv6 - 443",
-                "💦 1 - Trojan - Domain - 443",
-                "💦 2 - Trojan - Domain - 443",
-                "💦 3 - Trojan - IPv4 - 443",
-                "💦 4 - Trojan - IPv4 - 443",
-                "💦 5 - Trojan - IPv6 - 443",
-                "💦 6 - Trojan - IPv6 - 443"
+                "最佳网速",
+                "VLESS-9916",
+                "VLESS-zxing",
+                "VLESS-steven9916",
+                "Trojan9916",
+                "Trojan-zxing",
+                "Trojan-steven9916",
             ]
         },
         {
-            "name": "💦 Best Ping 💥",
+            "name": "最佳网速",
             "type": "url-test",
             "url": "https://www.gstatic.com/generate_204",
             "interval": 30,
             "tolerance": 50,
             "proxies": [
-                "💦 1 - VLESS - Domain - 443",
-                "💦 2 - VLESS - Domain - 443",
-                "💦 3 - VLESS - IPv4 - 443",
-                "💦 4 - VLESS - IPv4 - 443",
-                "💦 5 - VLESS - IPv6 - 443",
-                "💦 6 - VLESS - IPv6 - 443",
-                "💦 1 - Trojan - Domain - 443",
-                "💦 2 - Trojan - Domain - 443",
-                "💦 3 - Trojan - IPv4 - 443",
-                "💦 4 - Trojan - IPv4 - 443",
-                "💦 5 - Trojan - IPv6 - 443",
-                "💦 6 - Trojan - IPv6 - 443"
+                "VLESS-9916",
+                "VLESS-zxing",
+                "VLESS-steven9916",
+                "Trojan9916",
+                "Trojan-zxing",
+                "Trojan-steven9916",
             ]
         }
     ],

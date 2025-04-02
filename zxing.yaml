@@ -30,7 +30,7 @@
         "respect-rules": true,
         "use-system-hosts": false,
         "nameserver": [
-            "https://8.8.8.8/dns-query#选择"
+            "https://8.8.8.8/dns-query#✅ Selector"
         ],
         "proxy-server-nameserver": [
             "8.8.8.8#DIRECT"
@@ -232,10 +232,10 @@
     ],
     "proxy-groups": [
         {
-            "name": "选择",
+            "name": "✅ Selector",
             "type": "select",
             "proxies": [
-                "最佳网速",
+                "💦 Best Ping 💥",
                 "VLESS-9916",
                 "VLESS-zxing",
                 "VLESS-steven9916",
@@ -245,7 +245,7 @@
             ]
         },
         {
-            "name": "最佳网速",
+            "name": "💦 Best Ping 💥",
             "type": "url-test",
             "url": "https://www.gstatic.com/generate_204",
             "interval": 30,
@@ -336,7 +336,7 @@
         "RULE-SET,cn,DIRECT",
         "RULE-SET,private-cidr,DIRECT,no-resolve",
         "RULE-SET,cn-cidr,DIRECT",
-        "MATCH,选择"
+        "MATCH,✅ Selector"
     ],
     "ntp": {
         "enable": true,

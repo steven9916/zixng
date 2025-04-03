@@ -238,7 +238,7 @@
         {
             "name": "Trojan9916",
             "type": "trojan",
-            "server": "443.zxing.eu.org",
+            "server": "443.9916.eu.org",
             "port": 443,
             "password": "zx2009211846",
             "network": "ws",

@@ -160,7 +160,7 @@
             "client-fingerprint": "random",
             "skip-cert-verify": false
         },
-                {
+        {
             "name": "VLESS-9916dns",
             "type": "vless",
             "server": "443.zxing.eu.org",
@@ -185,7 +185,7 @@
             "client-fingerprint": "random",
             "skip-cert-verify": false
         },
-                {
+        {
             "name": "VLESS-zx9916dns",
             "type": "vless",
             "server": "443.zxing.eu.org",
@@ -210,7 +210,7 @@
             "client-fingerprint": "random",
             "skip-cert-verify": false
         },
-                {
+        {
             "name": "VLESS-zxingdns",
             "type": "vless",
             "server": "443.zxing.eu.org",

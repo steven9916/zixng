@@ -235,144 +235,7 @@
             "client-fingerprint": "random",
             "skip-cert-verify": false
         },
-        {
-            "name": "Trojan9916",
-            "type": "trojan",
-            "server": "443.zxing.eu.org",
-            "port": 443,
-            "password": "zx2009211846",
-            "network": "ws",
-            "udp": true,
-            "ws-opts": {
-                "path": "/?ed=2560",
-                "headers": {
-                    "Host": "kkktr.9916.eu.org"
-                },
-                "max-early-data": 2560,
-                "early-data-header-name": "Sec-WebSocket-Protocol"
-            },
-            "sni": "kkktr.9916.eu.org",
-            "alpn": [
-                "http/1.1"
-            ],
-            "client-fingerprint": "random",
-            "skip-cert-verify": false
-        },
-        {
-            "name": "Trojan-zxing",
-            "type": "trojan",
-            "server": "443.zxing.eu.org",
-            "port": 443,
-            "password": "zx2009211846",
-            "network": "ws",
-            "udp": true,
-            "ws-opts": {
-                "path": "/?ed=2560",
-                "headers": {
-                    "Host": "kkktr.zxing.eu.org"
-                },
-                "max-early-data": 2560,
-                "early-data-header-name": "Sec-WebSocket-Protocol"
-            },
-            "sni": "kkktr.zxing.eu.org",
-            "alpn": [
-                "http/1.1"
-            ],
-            "client-fingerprint": "random",
-            "skip-cert-verify": false
-        },
-        {
-            "name": "Trojan-steven9916",
-            "type": "trojan",
-            "server": "443.zxing.eu.org",
-            "port": 443,
-            "password": "zx2009211846",
-            "network": "ws",
-            "udp": true,
-            "ws-opts": {
-                "path": "/?ed=2560",
-                "headers": {
-                    "Host": "kkktr.steven9916.eu.org"
-                },
-                "max-early-data": 2560,
-                "early-data-header-name": "Sec-WebSocket-Protocol"
-            },
-            "sni": "kkktr.steven9916.eu.org",
-            "alpn": [
-                "http/1.1"
-            ],
-            "client-fingerprint": "random",
-            "skip-cert-verify": false
-        },
-        {
-            "name": "Trojan-zx9916dns",
-            "type": "trojan",
-            "server": "443.zxing.eu.org",
-            "port": 443,
-            "password": "zx2009211846",
-            "network": "ws",
-            "udp": true,
-            "ws-opts": {
-                "path": "/?ed=2560",
-                "headers": {
-                    "Host": "kkktr.zx9916.dpdns.org"
-                },
-                "max-early-data": 2560,
-                "early-data-header-name": "Sec-WebSocket-Protocol"
-            },
-            "sni": "kkktr.zx9916.dpdns.org",
-            "alpn": [
-                "http/1.1"
-            ],
-            "client-fingerprint": "random",
-            "skip-cert-verify": false
-        },
-         {
-            "name": "Trojan-9916dns",
-            "type": "trojan",
-            "server": "443.zxing.eu.org",
-            "port": 443,
-            "password": "zx2009211846",
-            "network": "ws",
-            "udp": true,
-            "ws-opts": {
-                "path": "/?ed=2560",
-                "headers": {
-                    "Host": "kkktr.9916.dpdns.org"
-                },
-                "max-early-data": 2560,
-                "early-data-header-name": "Sec-WebSocket-Protocol"
-            },
-            "sni": "kkktr.9916.dpdns.org",
-            "alpn": [
-                "http/1.1"
-            ],
-            "client-fingerprint": "random",
-            "skip-cert-verify": false
-        },
-         {
-            "name": "Trojan-zxingdns",
-            "type": "trojan",
-            "server": "443.zxing.eu.org",
-            "port": 443,
-            "password": "zx2009211846",
-            "network": "ws",
-            "udp": true,
-            "ws-opts": {
-                "path": "/?ed=2560",
-                "headers": {
-                    "Host": "kkktr.zxing.dpdns.org"
-                },
-                "max-early-data": 2560,
-                "early-data-header-name": "Sec-WebSocket-Protocol"
-            },
-            "sni": "kkktr.zxing.dpdns.org",
-            "alpn": [
-                "http/1.1"
-            ],
-            "client-fingerprint": "random",
-            "skip-cert-verify": false
-        },
+      
     ],
     "proxy-groups": [
         {
@@ -386,12 +249,7 @@
                 "VLESS-9916dns",
                 "VLESS-zx9916dns",
                 "VLESS-zxingdns",
-                "Trojan9916",
-                "Trojan-zxing",
-                "Trojan-steven9916",
-                "Trojan-zx9916dns",
-                "Trojan-9916dns",
-                "Trojan-zxingdns",
+              
             ]
         },
         {
@@ -407,12 +265,7 @@
                 "VLESS-9916dns",
                 "VLESS-zx9916dns",
                 "VLESS-zxingdns",
-                "Trojan9916",
-                "Trojan-zxing",
-                "Trojan-steven9916",
-                "Trojan-zx9916dns",
-                "Trojan-9916dns",
-                "Trojan-zxingdns",
+              
             ]
         }
     ],

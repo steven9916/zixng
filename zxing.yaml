@@ -240,10 +240,9 @@
             ]
         },
         {
-            "name": "💦 balance 💥",
-            "type": "load-balance",
+            "name": "💦 Best ping 💥",
+            "type": "url-test",
             "url": "https://www.gstatic.com/generate_204",
-            "strategy': "round-robin",
             "interval": 30,
             "tolerance": 50,
             "proxies": [

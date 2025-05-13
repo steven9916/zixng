@@ -88,10 +88,9 @@
         {
             "name": "vless_tunnel",
             "type": "vless",
-            "server": "104.16.0.1",
+            "server": "443.zxing.eu.org",
             "port": 443,
             "uuid": "ad59b39b-e1a0-41fd-9ed8-0238d6f26742",
-            "packet-encoding": "packetaddr",
             "tls": true,
             "tfo": false,
             "network": "ws",

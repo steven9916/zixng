@@ -86,179 +86,93 @@
     },
     "proxies": [
         {
-            "name": "VLESS-9916",
+            "name": "us_tunnel",
             "type": "vless",
             "server": "443.zxing.eu.org",
             "port": 443,
-            "uuid": "c51b32f8-e06e-4905-ba0a-8ae01c2b66e0",
+            "uuid": "ad59b39b-e1a0-41fd-9ed8-0238d6f26742",
             "packet-encoding": "packetaddr",
             "tls": true,
             "network": "ws",
             "udp": true,
             "ws-opts": {
-                "path": "/AjdKLjYyWE4MruRf",
+                "path": "/ad59b39b-e1a0-41fd-9ed8-0238d6f26742?ed=2048",
                 "headers": {
-                    "Host": "zhou.9916.eu.org"
+                    "Host": "discipline-drainage-korean-married.trycloudflare.com"
                 },
                 "max-early-data": 2560,
                 "early-data-header-name": "Sec-WebSocket-Protocol"
             },
-            "servername": "ZHOU.9916.Eu.oRG",
+            "servername": "discipline-drainage-korean-married.trycloudflare.com",
             "alpn": [
                 "http/1.1"
             ],
-            "client-fingerprint": "random",
+            "client-fingerprint": "chrome",
             "skip-cert-verify": false
         },
         {
-            "name": "VLESS-zxing",
+            "name": "sg_tunnel",
             "type": "vless",
             "server": "443.zxing.eu.org",
             "port": 443,
-            "uuid": "c51b32f8-e06e-4905-ba0a-8ae01c2b66e0",
+            "uuid": "432b2287-b509-49f9-8ebc-a1695efea1e2",
             "packet-encoding": "packetaddr",
             "tls": true,
             "network": "ws",
             "udp": true,
             "ws-opts": {
-                "path": "/z6AmAUDyY41rm0s0",
+                "path": "/432b2287-b509-49f9-8ebc-a1695efea1e2?ed=2048",
                 "headers": {
-                    "Host": "zhou.zxing.eu.org"
+                    "Host": "charm-pressed-silly-variety.trycloudflare.com"
                 },
                 "max-early-data": 2560,
                 "early-data-header-name": "Sec-WebSocket-Protocol"
             },
-            "servername": "zhoU.zXInG.Eu.ORg",
+            "servername": "charm-pressed-silly-variety.trycloudflare.com",
             "alpn": [
                 "http/1.1"
             ],
-            "client-fingerprint": "random",
+            "client-fingerprint": "chrome",
             "skip-cert-verify": false
         },
         {
-            "name": "VLESS-steven9916",
+            "name": "jp_tunnel",
             "type": "vless",
             "server": "443.zxing.eu.org",
             "port": 443,
-            "uuid": "c51b32f8-e06e-4905-ba0a-8ae01c2b66e0",
+            "uuid": "54370141-33bb-4138-a6b9-67fb0d5f8ecc",
             "packet-encoding": "packetaddr",
             "tls": true,
             "network": "ws",
             "udp": true,
             "ws-opts": {
-                "path": "/1XJI7iYDEd3yM6jQ",
+                "path": "/54370141-33bb-4138-a6b9-67fb0d5f8ecc?ed=2048",
                 "headers": {
-                    "Host": "zhou.steven9916.eu.org"
+                    "Host": "consumption-pumps-gained-api.trycloudflare.com"
                 },
                 "max-early-data": 2560,
                 "early-data-header-name": "Sec-WebSocket-Protocol"
             },
-            "servername": "ZhOU.StEvEn9916.EU.org",
+            "servername": "consumption-pumps-gained-api.trycloudflare.com",
             "alpn": [
                 "http/1.1"
             ],
-            "client-fingerprint": "random",
+            "client-fingerprint": "chrome",
             "skip-cert-verify": false
         },
-        {
-            "name": "Trojan9916",
-            "type": "trojan",
-            "server": "443.zxing.eu.org",
-            "port": 443,
-            "password": "zx2009211846",
-            "network": "ws",
-            "udp": true,
-            "ws-opts": {
-                "path": "/tr2yNqu4Q8YmgyYp6r",
-                "headers": {
-                    "Host": "zhou.9916.eu.org"
-                },
-                "max-early-data": 2560,
-                "early-data-header-name": "Sec-WebSocket-Protocol"
-            },
-            "sni": "ZhoU.9916.eu.ORg",
-            "alpn": [
-                "http/1.1"
-            ],
-            "client-fingerprint": "random",
-            "skip-cert-verify": false
-        },
-        {
-            "name": "Trojan-zxing",
-            "type": "trojan",
-            "server": "443.zxing.eu.org",
-            "port": 443,
-            "password": "zx2009211846",
-            "network": "ws",
-            "udp": true,
-            "ws-opts": {
-                "path": "/trkYut96ssHkVLK2tL",
-                "headers": {
-                    "Host": "zhou.zxing.eu.org"
-                },
-                "max-early-data": 2560,
-                "early-data-header-name": "Sec-WebSocket-Protocol"
-            },
-            "sni": "ZHOU.zXinG.eu.org",
-            "alpn": [
-                "http/1.1"
-            ],
-            "client-fingerprint": "random",
-            "skip-cert-verify": false
-        },
-        {
-            "name": "Trojan-steven9916",
-            "type": "trojan",
-            "server": "443.zxing.eu.org",
-            "port": 443,
-            "password": "zx2009211846",
-            "network": "ws",
-            "udp": true,
-            "ws-opts": {
-                "path": "/trrzOdzg8B7ZJxQlXn",
-                "headers": {
-                    "Host": "zhou.steven9916.eu.org"
-                },
-                "max-early-data": 2560,
-                "early-data-header-name": "Sec-WebSocket-Protocol"
-            },
-            "sni": "ZHou.STeVEn9916.Eu.ORg",
-            "alpn": [
-                "http/1.1"
-            ],
-            "client-fingerprint": "random",
-            "skip-cert-verify": false
-        },
+       
     ],
     "proxy-groups": [
         {
             "name": "✅ Selector",
             "type": "select",
             "proxies": [
-                "💦 balance 💥",
-                "VLESS-9916",
-                "VLESS-zxing",
-                "VLESS-steven9916",
-                "Trojan9916",
-                "Trojan-zxing",
-                "Trojan-steven9916",
+                "us_tunnel",
+                "sg_tunnel",
+                "jp_tunnel",
             ]
         },
-        {
-            "name": "💦 balance 💥",
-            "type": "load-balance",
-            "url": "https://www.gstatic.com/generate_204",
-            "interval": 30,
-            "tolerance": 50,
-            "proxies": [
-                "VLESS-9916",
-                "VLESS-zxing",
-                "VLESS-steven9916",
-                "Trojan9916",
-                "Trojan-zxing",
-                "Trojan-steven9916",
-            ]
-        }
+       
     ],
     "rule-providers": {
         "private": {

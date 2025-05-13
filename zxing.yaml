@@ -96,17 +96,13 @@
             "network": "ws",
             "udp": true,
             "ws-opts": {
-                "path": "/660c32da-78a5-4dd1-a76a-0c7248d857f9?ed=2048",
+                "path": "/ad59b39b-e1a0-41fd-9ed8-0238d6f26742?ed=2048",
                 "headers": {
-                    "Host": "marcus-upcoming-adams-shaw.trycloudflare.com"
+                    "Host": "discipline-drainage-korean-married.trycloudflare.com"
                 },
-                "max-early-data": 2560,
                 "early-data-header-name": "Sec-WebSocket-Protocol"
             },
-            "servername": "marcus-upcoming-adams-shaw.trycloudflare.com",
-            "alpn": [
-                "http/1.1"
-            ],
+            "servername": "discipline-drainage-korean-married.trycloudflare.com",
             "client-fingerprint": "chrome",
             "skip-cert-verify": false
         },

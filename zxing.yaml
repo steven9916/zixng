@@ -88,7 +88,7 @@
         {
             "name": "justcn2.top",
             "type": "vmess",
-            "server": " xg2.justcn2.top",
+            "server": "xg2.justcn2.top",
             "port": 80,
             "uuid": "2320cb5d-0f8d-3f5c-aec8-823edb6c4956",
             "tls": false,
@@ -101,9 +101,8 @@
                 "headers": {
                     "Host": "pull.free.video.10010.com"
                 },
-                "early-data-header-name": "Sec-WebSocket-Protocol"
             },
-            "servername": "10010.com",
+            "servername": "a.189.cn",
             "skip-cert-verify": false
         },
     ],

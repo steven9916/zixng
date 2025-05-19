@@ -95,7 +95,7 @@
             "tfo": false,
             "network": "ws",
             "alterId": 0,
-            "cipher": auto,
+            "cipher": "auto",
             "ws-opts": {
                 "path": "/",
                 "headers": {

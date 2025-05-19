@@ -86,24 +86,24 @@
     },
     "proxies": [
         {
-            "name": "vless_tunnel",
-            "type": "vless",
-            "server": "104.16.0.1",
-            "port": 443,
-            "uuid": "ad59b39b-e1a0-41fd-9ed8-0238d6f26742",
-            "tls": true,
+            "name": "justcn2.top",
+            "type": "vmess",
+            "server": " xg2.justcn2.top",
+            "port": 80,
+            "uuid": "2320cb5d-0f8d-3f5c-aec8-823edb6c4956",
+            "tls": false,
             "tfo": false,
             "network": "ws",
-            "udp": true,
+            "alterId": 0,
+            "cipher": auto,
             "ws-opts": {
-                "path": "/ad59b39b-e1a0-41fd-9ed8-0238d6f26742?ed=2048",
+                "path": "/",
                 "headers": {
-                    "Host": "discipline-drainage-korean-married.trycloudflare.com"
+                    "Host": "pull.free.video.10010.com"
                 },
                 "early-data-header-name": "Sec-WebSocket-Protocol"
             },
-            "servername": "discipline-drainage-korean-married.trycloudflare.com",
-            "client-fingerprint": "chrome",
+            "servername": "10010.com",
             "skip-cert-verify": false
         },
     ],
@@ -112,7 +112,7 @@
             "name": "✅ Selector",
             "type": "select",
             "proxies": [
-                "vless_tunnel",
+                "justcn2.top",
             ]
         },
       

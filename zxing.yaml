@@ -106,7 +106,7 @@
             "skip-cert-verify": false
             "ws-path": "/",
             "ws-headers": {
-                 "Host": "pull.free.video.10010.com"
+                 "Host": "pull.free.video.10010.com"},
         },
     ],
     "proxy-groups": [

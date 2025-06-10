@@ -90,20 +90,20 @@
             "type": "vless",
             "server": "443.zxing.eu.org",
             "port": 443,
-            "uuid": "ad59b39b-e1a0-41fd-9ed8-0238d6f26742",
+            "uuid": "c2f6e311-abe5-41c9-85ba-052dd3ee9998",
             "packet-encoding": "packetaddr",
             "tls": true,
             "network": "ws",
             "udp": true,
             "ws-opts": {
-                "path": "/ad59b39b-e1a0-41fd-9ed8-0238d6f26742?ed=2048",
+                "path": "/c2f6e311-abe5-41c9-85ba-052dd3ee9998?ed=2048",
                 "headers": {
-                    "Host": "discipline-drainage-korean-married.trycloudflare.com"
+                    "Host": "deny-contractors-charts-garden.trycloudflare.com"
                 },
                 "max-early-data": 2560,
                 "early-data-header-name": "Sec-WebSocket-Protocol"
             },
-            "servername": "discipline-drainage-korean-married.trycloudflare.com",
+            "servername": "deny-contractors-charts-garden.trycloudflare.com",
             "alpn": [
                 "http/1.1"
             ],

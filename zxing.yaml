@@ -88,21 +88,21 @@
         {
             "name": "vless_tunnel",
             "type": "vless",
-            "server": "104.16.0.1",
+            "server": "443.zxing.eu.org",
             "port": 443,
-            "uuid": "ad59b39b-e1a0-41fd-9ed8-0238d6f26742",
+            "uuid": "5381d41c-6451-484a-96d8-b3eb06f47142",
             "tls": true,
             "tfo": false,
             "network": "ws",
             "udp": true,
             "ws-opts": {
-                "path": "/ad59b39b-e1a0-41fd-9ed8-0238d6f26742?ed=2048",
+                "path": "/5381d41c-6451-484a-96d8-b3eb06f47142?ed=2048",
                 "headers": {
-                    "Host": "discipline-drainage-korean-married.trycloudflare.com"
+                    "Host": "commands-relief-transcript-ministers.trycloudflare.com"
                 },
                 "early-data-header-name": "Sec-WebSocket-Protocol"
             },
-            "servername": "discipline-drainage-korean-married.trycloudflare.com",
+            "servername": "commands-relief-transcript-ministers.trycloudflare.com",
             "client-fingerprint": "chrome",
             "skip-cert-verify": false
         },

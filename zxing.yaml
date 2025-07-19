@@ -88,7 +88,7 @@
         {
             "name": "VLESS-9916",
             "type": "vless",
-            "server": "443.zxing.eu.org",
+            "server": "usa.visa.com",
             "port": 443,
             "uuid": "c51b32f8-e06e-4905-ba0a-8ae01c2b66e0",
             "packet-encoding": "packetaddr",
@@ -113,8 +113,8 @@
         {
             "name": "VLESS-zxing",
             "type": "vless",
-            "server": "443.zxing.eu.org",
-            "port": 443,
+            "server": "myanmar.visa.com",
+            "port": 8443,
             "uuid": "c51b32f8-e06e-4905-ba0a-8ae01c2b66e0",
             "packet-encoding": "packetaddr",
             "tls": true,
@@ -138,8 +138,8 @@
         {
             "name": "VLESS-steven9916",
             "type": "vless",
-            "server": "443.zxing.eu.org",
-            "port": 443,
+            "server": "www.visa.com.tw",
+            "port": 2053,
             "uuid": "c51b32f8-e06e-4905-ba0a-8ae01c2b66e0",
             "packet-encoding": "packetaddr",
             "tls": true,
@@ -163,8 +163,8 @@
         {
             "name": "VLESS-9916dns",
             "type": "vless",
-            "server": "443.zxing.eu.org",
-            "port": 443,
+            "server": "www.visaeurope.ch",
+            "port": 2083,
             "uuid": "c51b32f8-e06e-4905-ba0a-8ae01c2b66e0",
             "packet-encoding": "packetaddr",
             "tls": true,
@@ -188,8 +188,8 @@
         {
             "name": "VLESS-zx9916dns",
             "type": "vless",
-            "server": "443.zxing.eu.org",
-            "port": 443,
+            "server": "www.visa.com.br",
+            "port": 2087,
             "uuid": "c51b32f8-e06e-4905-ba0a-8ae01c2b66e0",
             "packet-encoding": "packetaddr",
             "tls": true,
@@ -213,8 +213,8 @@
         {
             "name": "VLESS-zxingdns",
             "type": "vless",
-            "server": "443.zxing.eu.org",
-            "port": 443,
+            "server": "www.visasoutheasteurope.com",
+            "port": 2096,
             "uuid": "c51b32f8-e06e-4905-ba0a-8ae01c2b66e0",
             "packet-encoding": "packetaddr",
             "tls": true,

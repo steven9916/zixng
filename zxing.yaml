@@ -221,7 +221,7 @@
                 "VLESS-zxing",
                 "VLESS-steven9916",
                 "VLESS-9916dns",
-                "Trojan-zxing",
+                "VLESS-zxingdns",
                 "Trojan-steven9916",
             ]
         },
@@ -236,7 +236,7 @@
                 "VLESS-zxing",
                 "VLESS-steven9916",
                 "VLESS-9916dns",
-                "Trojan-zxing",
+                "VLESS-zxingdns",
                 "Trojan-steven9916",
             ]
         }
@@ -326,5 +326,6 @@
         "interval": 30
     }
 }
+
 
 

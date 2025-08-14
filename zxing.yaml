@@ -160,69 +160,25 @@
             "client-fingerprint": "random",
             "skip-cert-verify": false
         },
-        {
-            "name": "Trojan9916",
-            "type": "trojan",
+               {
+            "name": "VLESS-s9916dns",
+            "type": "vless",
             "server": "443.zxing.eu.org",
             "port": 443,
-            "password": "zx2009211846",
+            "uuid": "c51b32f8-e06e-4905-ba0a-8ae01c2b66e0",
+            "packet-encoding": "packetaddr",
+            "tls": true,
             "network": "ws",
             "udp": true,
             "ws-opts": {
-                "path": "/tr2yNqu4Q8YmgyYp6r",
+                "path": "/rQLAcEf1BaYuyzvI?ed=2560",
                 "headers": {
-                    "Host": "zhou.9916.eu.org"
+                    "Host": "zhou.9916.dpdns.org"
                 },
                 "max-early-data": 2560,
                 "early-data-header-name": "Sec-WebSocket-Protocol"
             },
-            "sni": "ZhoU.9916.eu.ORg",
-            "alpn": [
-                "http/1.1"
-            ],
-            "client-fingerprint": "random",
-            "skip-cert-verify": false
-        },
-        {
-            "name": "Trojan-zxing",
-            "type": "trojan",
-            "server": "443.zxing.eu.org",
-            "port": 443,
-            "password": "zx2009211846",
-            "network": "ws",
-            "udp": true,
-            "ws-opts": {
-                "path": "/trkYut96ssHkVLK2tL",
-                "headers": {
-                    "Host": "zhou.zxing.eu.org"
-                },
-                "max-early-data": 2560,
-                "early-data-header-name": "Sec-WebSocket-Protocol"
-            },
-            "sni": "ZHOU.zXinG.eu.org",
-            "alpn": [
-                "http/1.1"
-            ],
-            "client-fingerprint": "random",
-            "skip-cert-verify": false
-        },
-        {
-            "name": "Trojan-steven9916",
-            "type": "trojan",
-            "server": "443.zxing.eu.org",
-            "port": 443,
-            "password": "zx2009211846",
-            "network": "ws",
-            "udp": true,
-            "ws-opts": {
-                "path": "/trrzOdzg8B7ZJxQlXn",
-                "headers": {
-                    "Host": "zhou.steven9916.eu.org"
-                },
-                "max-early-data": 2560,
-                "early-data-header-name": "Sec-WebSocket-Protocol"
-            },
-            "sni": "ZHou.STeVEn9916.Eu.ORg",
+            "servername": "ZHOu.9916.DPDnS.oRG",
             "alpn": [
                 "http/1.1"
             ],
@@ -239,7 +195,7 @@
                 "VLESS-9916",
                 "VLESS-zxing",
                 "VLESS-steven9916",
-                "Trojan9916",
+                "VLESS-s9916dns",
                 "Trojan-zxing",
                 "Trojan-steven9916",
             ]
@@ -254,7 +210,7 @@
                 "VLESS-9916",
                 "VLESS-zxing",
                 "VLESS-steven9916",
-                "Trojan9916",
+                "VLESS-s9916dns",
                 "Trojan-zxing",
                 "Trojan-steven9916",
             ]
@@ -345,3 +301,4 @@
         "interval": 30
     }
 }
+

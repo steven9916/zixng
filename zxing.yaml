@@ -178,6 +178,29 @@
             "client-fingerprint": "random",
             "skip-cert-verify": false
         },
+        {
+            "name": "Trojan-zxingdns",
+            "type": "trojan",
+            "server": "443.zxing.eu.org",
+            "port": 443,
+            "password": "zx2009211846",
+            "network": "ws",
+            "udp": true,
+            "ws-opts": {
+                "path": "/trz1183lsVNGWQzqMR?ed=2560",
+                "headers": {
+                    "Host": "zhou.zxing.dpdns.org"
+                },
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol"
+            },
+            "sni": "zHoU.zXIng.dPdns.orG",
+            "alpn": [
+                "http/1.1"
+            ],
+            "client-fingerprint": "random",
+            "skip-cert-verify": false
+        },
     ],
     "proxy-groups": [
         {
@@ -186,7 +209,7 @@
             "proxies": [
                 "💦 balance 💥",
                 "Trojan-9916dns",
-                "VLESS-zxing",
+                "Trojan-zxingdns",
                 "VLESS-steven9916",
                 "Trojan9916",
                 "Trojan-zxing",
@@ -201,7 +224,7 @@
             "tolerance": 50,
             "proxies": [
                 "Trojan-9916dns",
-                "VLESS-zxing",
+                "Trojan-zxingdns",
                 "VLESS-steven9916",
                 "Trojan9916",
                 "Trojan-zxing",
@@ -294,4 +317,5 @@
         "interval": 30
     }
 }
+
 

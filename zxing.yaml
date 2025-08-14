@@ -85,81 +85,7 @@
         }
     },
     "proxies": [
-        {
-            "name": "VLESS-9916",
-            "type": "vless",
-            "server": "443.zxing.eu.org",
-            "port": 443,
-            "uuid": "c51b32f8-e06e-4905-ba0a-8ae01c2b66e0",
-            "packet-encoding": "packetaddr",
-            "tls": true,
-            "network": "ws",
-            "udp": true,
-            "ws-opts": {
-                "path": "/AjdKLjYyWE4MruRf",
-                "headers": {
-                    "Host": "zhou.9916.eu.org"
-                },
-                "max-early-data": 2560,
-                "early-data-header-name": "Sec-WebSocket-Protocol"
-            },
-            "servername": "ZHOU.9916.Eu.oRG",
-            "alpn": [
-                "http/1.1"
-            ],
-            "client-fingerprint": "random",
-            "skip-cert-verify": false
-        },
-        {
-            "name": "VLESS-zxing",
-            "type": "vless",
-            "server": "443.zxing.eu.org",
-            "port": 443,
-            "uuid": "c51b32f8-e06e-4905-ba0a-8ae01c2b66e0",
-            "packet-encoding": "packetaddr",
-            "tls": true,
-            "network": "ws",
-            "udp": true,
-            "ws-opts": {
-                "path": "/z6AmAUDyY41rm0s0",
-                "headers": {
-                    "Host": "zhou.zxing.eu.org"
-                },
-                "max-early-data": 2560,
-                "early-data-header-name": "Sec-WebSocket-Protocol"
-            },
-            "servername": "zhoU.zXInG.Eu.ORg",
-            "alpn": [
-                "http/1.1"
-            ],
-            "client-fingerprint": "random",
-            "skip-cert-verify": false
-        },
-        {
-            "name": "VLESS-steven9916",
-            "type": "vless",
-            "server": "443.zxing.eu.org",
-            "port": 443,
-            "uuid": "c51b32f8-e06e-4905-ba0a-8ae01c2b66e0",
-            "packet-encoding": "packetaddr",
-            "tls": true,
-            "network": "ws",
-            "udp": true,
-            "ws-opts": {
-                "path": "/1XJI7iYDEd3yM6jQ",
-                "headers": {
-                    "Host": "zhou.steven9916.eu.org"
-                },
-                "max-early-data": 2560,
-                "early-data-header-name": "Sec-WebSocket-Protocol"
-            },
-            "servername": "ZhOU.StEvEn9916.EU.org",
-            "alpn": [
-                "http/1.1"
-            ],
-            "client-fingerprint": "random",
-            "skip-cert-verify": false
-        },
+       
         {
             "name": "Trojan9916",
             "type": "trojan",
@@ -229,6 +155,29 @@
             "client-fingerprint": "random",
             "skip-cert-verify": false
         },
+        {
+            "name": "Trojan-9916dns",
+            "type": "trojan",
+            "server": "443.zxing.eu.org",
+            "port": 443,
+            "password": "zx2009211846",
+            "network": "ws",
+            "udp": true,
+            "ws-opts": {
+                "path": "/trB4FGADvJOYGFPkoX?ed=2560",
+                "headers": {
+                    "Host": "zhou.9916.dpdns.org"
+                },
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol"
+            },
+            "sni": "ZHOu.9916.DPDnS.oRG",
+            "alpn": [
+                "http/1.1"
+            ],
+            "client-fingerprint": "random",
+            "skip-cert-verify": false
+        },
     ],
     "proxy-groups": [
         {
@@ -236,7 +185,7 @@
             "type": "select",
             "proxies": [
                 "💦 balance 💥",
-                "VLESS-9916",
+                "Trojan-9916dns",
                 "VLESS-zxing",
                 "VLESS-steven9916",
                 "Trojan9916",
@@ -251,7 +200,7 @@
             "interval": 30,
             "tolerance": 50,
             "proxies": [
-                "VLESS-9916",
+                "Trojan-9916dns",
                 "VLESS-zxing",
                 "VLESS-steven9916",
                 "Trojan9916",
@@ -345,3 +294,4 @@
         "interval": 30
     }
 }
+

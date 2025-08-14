@@ -160,8 +160,8 @@
             "client-fingerprint": "random",
             "skip-cert-verify": false
         },
-               {
-            "name": "VLESS-s9916dns",
+        {
+            "name": "VLESS-9916dns",
             "type": "vless",
             "server": "443.zxing.eu.org",
             "port": 443,
@@ -185,6 +185,31 @@
             "client-fingerprint": "random",
             "skip-cert-verify": false
         },
+               {
+            "name": "VLESS-zxingdns",
+            "type": "vless",
+            "server": "443.zxing.eu.org",
+            "port": 443,
+            "uuid": "c51b32f8-e06e-4905-ba0a-8ae01c2b66e0",
+            "packet-encoding": "packetaddr",
+            "tls": true,
+            "network": "ws",
+            "udp": true,
+            "ws-opts": {
+                "path": "/FHAeBUPTMEHQHCb3?ed=2560",
+                "headers": {
+                    "Host": "zhou.zxing.dpdns.org"
+                },
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol"
+            },
+            "servername": "zHoU.zXIng.dPdns.orG",
+            "alpn": [
+                "http/1.1"
+            ],
+            "client-fingerprint": "random",
+            "skip-cert-verify": false
+        },
     ],
     "proxy-groups": [
         {
@@ -195,7 +220,7 @@
                 "VLESS-9916",
                 "VLESS-zxing",
                 "VLESS-steven9916",
-                "VLESS-s9916dns",
+                "VLESS-9916dns",
                 "Trojan-zxing",
                 "Trojan-steven9916",
             ]
@@ -210,7 +235,7 @@
                 "VLESS-9916",
                 "VLESS-zxing",
                 "VLESS-steven9916",
-                "VLESS-s9916dns",
+                "VLESS-9916dns",
                 "Trojan-zxing",
                 "Trojan-steven9916",
             ]
@@ -301,4 +326,5 @@
         "interval": 30
     }
 }
+
 

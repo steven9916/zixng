@@ -161,68 +161,74 @@
             "skip-cert-verify": false
         },
         {
-            "name": "Trojan9916",
-            "type": "trojan",
+            "name": "VLESS-9916dns",
+            "type": "vless",
             "server": "443.zxing.eu.org",
             "port": 443,
-            "password": "zx2009211846",
+            "uuid": "c51b32f8-e06e-4905-ba0a-8ae01c2b66e0",
+            "packet-encoding": "packetaddr",
+            "tls": true,
             "network": "ws",
             "udp": true,
             "ws-opts": {
-                "path": "/tr2yNqu4Q8YmgyYp6r",
+                "path": "/rQLAcEf1BaYuyzvI?ed=2560",
                 "headers": {
-                    "Host": "zhou.9916.eu.org"
+                    "Host": "zhou.9916.dpdns.org"
                 },
                 "max-early-data": 2560,
                 "early-data-header-name": "Sec-WebSocket-Protocol"
             },
-            "sni": "ZhoU.9916.eu.ORg",
+            "servername": "ZHOu.9916.DPDnS.oRG",
             "alpn": [
                 "http/1.1"
             ],
             "client-fingerprint": "random",
             "skip-cert-verify": false
         },
-        {
-            "name": "Trojan-zxing",
-            "type": "trojan",
+               {
+            "name": "VLESS-zxingdns",
+            "type": "vless",
             "server": "443.zxing.eu.org",
             "port": 443,
-            "password": "zx2009211846",
+            "uuid": "c51b32f8-e06e-4905-ba0a-8ae01c2b66e0",
+            "packet-encoding": "packetaddr",
+            "tls": true,
             "network": "ws",
             "udp": true,
             "ws-opts": {
-                "path": "/trkYut96ssHkVLK2tL",
+                "path": "/FHAeBUPTMEHQHCb3?ed=2560",
                 "headers": {
-                    "Host": "zhou.zxing.eu.org"
+                    "Host": "zhou.zxing.dpdns.org"
                 },
                 "max-early-data": 2560,
                 "early-data-header-name": "Sec-WebSocket-Protocol"
             },
-            "sni": "ZHOU.zXinG.eu.org",
+            "servername": "zHoU.zXIng.dPdns.orG",
             "alpn": [
                 "http/1.1"
             ],
             "client-fingerprint": "random",
             "skip-cert-verify": false
         },
-        {
-            "name": "Trojan-steven9916",
-            "type": "trojan",
+               {
+            "name": "VLESS-zx9916dns",
+            "type": "vless",
             "server": "443.zxing.eu.org",
             "port": 443,
-            "password": "zx2009211846",
+            "uuid": "c51b32f8-e06e-4905-ba0a-8ae01c2b66e0",
+            "packet-encoding": "packetaddr",
+            "tls": true,
             "network": "ws",
             "udp": true,
             "ws-opts": {
-                "path": "/trrzOdzg8B7ZJxQlXn",
+                "path": "/JYFrM4p1L8FyRnZW?ed=2560",
                 "headers": {
-                    "Host": "zhou.steven9916.eu.org"
+                    "Host": "zhou.zx9916.dpdns.org"
                 },
                 "max-early-data": 2560,
                 "early-data-header-name": "Sec-WebSocket-Protocol"
             },
-            "sni": "ZHou.STeVEn9916.Eu.ORg",
+            "servername": "ZHoU.zx9916.DpDnS.orG",
             "alpn": [
                 "http/1.1"
             ],
@@ -239,9 +245,9 @@
                 "VLESS-9916",
                 "VLESS-zxing",
                 "VLESS-steven9916",
-                "Trojan9916",
-                "Trojan-zxing",
-                "Trojan-steven9916",
+                "VLESS-9916dns",
+                "VLESS-zxingdns",
+                "VLESS-zx9916dns",
             ]
         },
         {
@@ -254,9 +260,9 @@
                 "VLESS-9916",
                 "VLESS-zxing",
                 "VLESS-steven9916",
-                "Trojan9916",
-                "Trojan-zxing",
-                "Trojan-steven9916",
+                "VLESS-9916dns",
+                "VLESS-zxingdns",
+                "VLESS-zx9916dns",
             ]
         }
     ],
@@ -345,3 +351,10 @@
         "interval": 30
     }
 }
+
+
+
+
+
+
+

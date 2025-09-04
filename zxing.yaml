@@ -86,147 +86,24 @@
     },
     "proxies": [
         {
-            "name": "VLESS-9916",
+            "name": "vless_tunnel",
             "type": "vless",
             "server": "443.zxing.eu.org",
             "port": 443,
-            "uuid": "c51b32f8-e06e-4905-ba0a-8ae01c2b66e0",
-            "packet-encoding": "packetaddr",
+            "uuid": "da77c58b-c571-49ac-ae40-8f61893ccdfa",
             "tls": true,
+            "tfo": false,
             "network": "ws",
             "udp": true,
             "ws-opts": {
-                "path": "/AjdKLjYyWE4MruRf",
+                "path": "/da77c58b-c571-49ac-ae40-8f61893ccdfa?ed=2048",
                 "headers": {
-                    "Host": "zhou.9916.eu.org"
+                    "Host": "eternal-com-hospitality-hon.trycloudflare.com"
                 },
-                "max-early-data": 2560,
                 "early-data-header-name": "Sec-WebSocket-Protocol"
             },
-            "servername": "ZHOU.9916.Eu.oRG",
-            "alpn": [
-                "http/1.1"
-            ],
-            "client-fingerprint": "random",
-            "skip-cert-verify": false
-        },
-        {
-            "name": "VLESS-zxing",
-            "type": "vless",
-            "server": "443.zxing.eu.org",
-            "port": 443,
-            "uuid": "c51b32f8-e06e-4905-ba0a-8ae01c2b66e0",
-            "packet-encoding": "packetaddr",
-            "tls": true,
-            "network": "ws",
-            "udp": true,
-            "ws-opts": {
-                "path": "/z6AmAUDyY41rm0s0",
-                "headers": {
-                    "Host": "zhou.zxing.eu.org"
-                },
-                "max-early-data": 2560,
-                "early-data-header-name": "Sec-WebSocket-Protocol"
-            },
-            "servername": "zhoU.zXInG.Eu.ORg",
-            "alpn": [
-                "http/1.1"
-            ],
-            "client-fingerprint": "random",
-            "skip-cert-verify": false
-        },
-        {
-            "name": "VLESS-steven9916",
-            "type": "vless",
-            "server": "443.zxing.eu.org",
-            "port": 443,
-            "uuid": "c51b32f8-e06e-4905-ba0a-8ae01c2b66e0",
-            "packet-encoding": "packetaddr",
-            "tls": true,
-            "network": "ws",
-            "udp": true,
-            "ws-opts": {
-                "path": "/1XJI7iYDEd3yM6jQ",
-                "headers": {
-                    "Host": "zhou.steven9916.eu.org"
-                },
-                "max-early-data": 2560,
-                "early-data-header-name": "Sec-WebSocket-Protocol"
-            },
-            "servername": "ZhOU.StEvEn9916.EU.org",
-            "alpn": [
-                "http/1.1"
-            ],
-            "client-fingerprint": "random",
-            "skip-cert-verify": false
-        },
-        {
-            "name": "Trojan9916",
-            "type": "trojan",
-            "server": "443.zxing.eu.org",
-            "port": 443,
-            "password": "zx2009211846",
-            "network": "ws",
-            "udp": true,
-            "ws-opts": {
-                "path": "/tr2yNqu4Q8YmgyYp6r",
-                "headers": {
-                    "Host": "zhou.9916.eu.org"
-                },
-                "max-early-data": 2560,
-                "early-data-header-name": "Sec-WebSocket-Protocol"
-            },
-            "sni": "ZhoU.9916.eu.ORg",
-            "alpn": [
-                "http/1.1"
-            ],
-            "client-fingerprint": "random",
-            "skip-cert-verify": false
-        },
-        {
-            "name": "Trojan-zxing",
-            "type": "trojan",
-            "server": "443.zxing.eu.org",
-            "port": 443,
-            "password": "zx2009211846",
-            "network": "ws",
-            "udp": true,
-            "ws-opts": {
-                "path": "/trkYut96ssHkVLK2tL",
-                "headers": {
-                    "Host": "zhou.zxing.eu.org"
-                },
-                "max-early-data": 2560,
-                "early-data-header-name": "Sec-WebSocket-Protocol"
-            },
-            "sni": "ZHOU.zXinG.eu.org",
-            "alpn": [
-                "http/1.1"
-            ],
-            "client-fingerprint": "random",
-            "skip-cert-verify": false
-        },
-        {
-            "name": "Trojan-steven9916",
-            "type": "trojan",
-            "server": "443.zxing.eu.org",
-            "port": 443,
-            "password": "zx2009211846",
-            "network": "ws",
-            "udp": true,
-            "ws-opts": {
-                "path": "/trrzOdzg8B7ZJxQlXn",
-                "headers": {
-                    "Host": "zhou.steven9916.eu.org"
-                },
-                "max-early-data": 2560,
-                "early-data-header-name": "Sec-WebSocket-Protocol"
-            },
-            "sni": "ZHou.STeVEn9916.Eu.ORg",
-            "alpn": [
-                "http/1.1"
-            ],
-            "client-fingerprint": "random",
+            "servername": "eternal-com-hospitality-hon.trycloudflare.com",
+            "client-fingerprint": "chrome",
             "skip-cert-verify": false
         },
     ],
@@ -235,30 +112,10 @@
             "name": "✅ Selector",
             "type": "select",
             "proxies": [
-                "💦 balance 💥",
-                "VLESS-9916",
-                "VLESS-zxing",
-                "VLESS-steven9916",
-                "Trojan9916",
-                "Trojan-zxing",
-                "Trojan-steven9916",
+                "vless_tunnel",
             ]
         },
-        {
-            "name": "💦 balance 💥",
-            "type": "load-balance",
-            "url": "https://www.gstatic.com/generate_204",
-            "interval": 30,
-            "tolerance": 50,
-            "proxies": [
-                "VLESS-9916",
-                "VLESS-zxing",
-                "VLESS-steven9916",
-                "Trojan9916",
-                "Trojan-zxing",
-                "Trojan-steven9916",
-            ]
-        }
+      
     ],
     "rule-providers": {
         "private": {
@@ -345,3 +202,4 @@
         "interval": 30
     }
 }
+

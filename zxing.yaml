@@ -96,14 +96,14 @@
             "network": "ws",
             "udp": true,
             "ws-opts": {
-                "path": "/AjdKLjYyWE4MruRf",
+                "path": "/",
                 "headers": {
-                    "Host": "zhou.9916.eu.org"
+                    "Host": "yg2.9916.eu.org"
                 },
                 "max-early-data": 2560,
                 "early-data-header-name": "Sec-WebSocket-Protocol"
             },
-            "servername": "ZHOU.9916.Eu.oRG",
+            "servername": "yg2.9916.eu.org",
             "alpn": [
                 "http/1.1"
             ],
@@ -351,6 +351,7 @@
         "interval": 30
     }
 }
+
 
 
 

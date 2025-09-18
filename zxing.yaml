@@ -95,14 +95,14 @@
             "network": "ws",
             "udp": true,
             "ws-opts": {
-                "path": "/tr2yNqu4Q8YmgyYp6r",
+                "path": "/",
                 "headers": {
-                    "Host": "zhou.9916.eu.org"
+                    "Host": "kkktr.9916.eu.org"
                 },
                 "max-early-data": 2560,
                 "early-data-header-name": "Sec-WebSocket-Protocol"
             },
-            "sni": "ZhoU.9916.eu.ORg",
+            "sni": "kkktr.9916.eu.org",
             "alpn": [
                 "http/1.1"
             ],
@@ -340,6 +340,7 @@
         "interval": 30
     }
 }
+
 
 
 

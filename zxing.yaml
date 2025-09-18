@@ -95,7 +95,7 @@
             "network": "ws",
             "udp": true,
             "ws-opts": {
-                "path": "/",
+                "path": "/?ed=2560",
                 "headers": {
                     "Host": "kkktr.9916.eu.org"
                 },
@@ -340,6 +340,7 @@
         "interval": 30
     }
 }
+
 
 
 

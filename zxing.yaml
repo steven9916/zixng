@@ -97,12 +97,12 @@
             "ws-opts": {
                 "path": "/?ed=2560",
                 "headers": {
-                    "Host": "kkktr.9916.eu.org"
+                    "Host": "kkktr2.9916.eu.org"
                 },
                 "max-early-data": 2560,
                 "early-data-header-name": "Sec-WebSocket-Protocol"
             },
-            "sni": "kkktr.9916.eu.org",
+            "sni": "kkktr2.9916.eu.org",
             "alpn": [
                 "http/1.1"
             ],
@@ -340,6 +340,7 @@
         "interval": 30
     }
 }
+
 
 
 

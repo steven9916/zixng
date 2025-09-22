@@ -88,7 +88,7 @@
         {
             "name": "VLESS-9916",
             "type": "vless",
-            "server": "visa.com",
+            "server": "104.9916.eu.org",
             "port": 443,
             "uuid": "c51b32f8-e06e-4905-ba0a-8ae01c2b66e0",
             "packet-encoding": "packetaddr",
@@ -113,7 +113,7 @@
         {
             "name": "VLESS-zxing",
             "type": "vless",
-            "server": "visa.com",
+            "server": "104.9916.eu.org",
             "port": 443,
             "uuid": "c51b32f8-e06e-4905-ba0a-8ae01c2b66e0",
             "packet-encoding": "packetaddr",
@@ -138,7 +138,7 @@
         {
             "name": "VLESS-steven9916",
             "type": "vless",
-            "server": "visa.com",
+            "server": "104.9916.eu.org",
             "port": 443,
             "uuid": "c51b32f8-e06e-4905-ba0a-8ae01c2b66e0",
             "packet-encoding": "packetaddr",
@@ -163,7 +163,7 @@
         {
             "name": "VLESS-9916dns",
             "type": "vless",
-            "server": "visa.com",
+            "server": "104.9916.eu.org",
             "port": 443,
             "uuid": "c51b32f8-e06e-4905-ba0a-8ae01c2b66e0",
             "packet-encoding": "packetaddr",
@@ -188,7 +188,7 @@
                {
             "name": "VLESS-zxingdns",
             "type": "vless",
-            "server": "visa.com",
+            "server": "104.9916.eu.org",
             "port": 443,
             "uuid": "c51b32f8-e06e-4905-ba0a-8ae01c2b66e0",
             "packet-encoding": "packetaddr",
@@ -213,7 +213,7 @@
                {
             "name": "VLESS-zx9916dns",
             "type": "vless",
-            "server": "visa.com",
+            "server": "104.9916.eu.org",
             "port": 443,
             "uuid": "c51b32f8-e06e-4905-ba0a-8ae01c2b66e0",
             "packet-encoding": "packetaddr",
@@ -351,6 +351,7 @@
         "interval": 30
     }
 }
+
 
 
 

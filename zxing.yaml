@@ -89,7 +89,7 @@
         {
             "name": "Trojan9916",
             "type": "trojan",
-            "server": "visa.com",
+            "server": "usa.visa.com",
             "port": 443,
             "password": "zx2009211846",
             "network": "ws",
@@ -112,7 +112,7 @@
         {
             "name": "Trojan-zxing",
             "type": "trojan",
-            "server": "visa.com",
+            "server": "usa.visa.com",
             "port": 443,
             "password": "zx2009211846",
             "network": "ws",
@@ -135,7 +135,7 @@
         {
             "name": "Trojan-steven9916",
             "type": "trojan",
-            "server": "visa.com",
+            "server": "usa.visa.com",
             "port": 443,
             "password": "zx2009211846",
             "network": "ws",
@@ -158,7 +158,7 @@
         {
             "name": "Trojan-9916dns",
             "type": "trojan",
-            "server": "visa.com",
+            "server": "usa.visa.com",
             "port": 443,
             "password": "zx2009211846",
             "network": "ws",
@@ -181,7 +181,7 @@
         {
             "name": "Trojan-zxingdns",
             "type": "trojan",
-            "server": "visa.com",
+            "server": "usa.visa.com",
             "port": 443,
             "password": "zx2009211846",
             "network": "ws",
@@ -204,7 +204,7 @@
         {
             "name": "Trojan-zx9916dns",
             "type": "trojan",
-            "server": "visa.com",
+            "server": "usa.visa.com",
             "port": 443,
             "password": "zx2009211846",
             "network": "ws",
@@ -340,6 +340,7 @@
         "interval": 30
     }
 }
+
 
 
 

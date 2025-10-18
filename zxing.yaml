@@ -88,7 +88,7 @@
         {
             "name": "VLESS-9916",
             "type": "vless",
-            "server": "443.zxing.eu.org",
+            "server": "sg.zxing.eu.org",
             "port": 443,
             "uuid": "c51b32f8-e06e-4905-ba0a-8ae01c2b66e0",
             "packet-encoding": "packetaddr",
@@ -98,12 +98,12 @@
             "ws-opts": {
                 "path": "/",
                 "headers": {
-                    "Host": "yg2.9916.eu.org"
+                    "Host": "new.9916.eu.org"
                 },
                 "max-early-data": 2560,
                 "early-data-header-name": "Sec-WebSocket-Protocol"
             },
-            "servername": "yg2.9916.eu.org",
+            "servername": "new.9916.eu.org",
             "alpn": [
                 "http/1.1"
             ],
@@ -113,7 +113,7 @@
         {
             "name": "VLESS-zxing",
             "type": "vless",
-            "server": "443.zxing.eu.org",
+            "server": "sg.zxing.eu.org",
             "port": 443,
             "uuid": "c51b32f8-e06e-4905-ba0a-8ae01c2b66e0",
             "packet-encoding": "packetaddr",
@@ -351,6 +351,7 @@
         "interval": 30
     }
 }
+
 
 
 

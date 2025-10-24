@@ -323,6 +323,14 @@
             "path": "./ruleset/cryptominers.txt",
             "interval": 86400
         },
+        "telegramcidr": {
+            "type": "http",
+            "format": "text",
+            "behavior": "domain",
+            "url": "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/telegramcidr.txt",
+            "path": "./ruleset/telegramcidr.yaml",
+            "interval": 86400
+        },
         "ads": {
             "type": "http",
             "format": "text",
@@ -341,6 +349,7 @@
         "RULE-SET,private,DIRECT",
         "RULE-SET,cn,DIRECT",
         "RULE-SET,private-cidr,DIRECT,no-resolve",
+        "RULE-SET,telegramcidr,✅ Selector",
         "RULE-SET,cn-cidr,DIRECT",
         "MATCH,✅ Selector"
     ],
@@ -351,6 +360,7 @@
         "interval": 30
     }
 }
+
 
 
 

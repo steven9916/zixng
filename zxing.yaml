@@ -88,7 +88,7 @@
         {
             "name": "VLESS-9916",
             "type": "vless",
-            "server": "jp.zxing.eu.org",
+            "server": "sg.zxing.eu.org",
             "port": 443,
             "uuid": "c51b32f8-e06e-4905-ba0a-8ae01c2b66e0",
             "packet-encoding": "packetaddr",
@@ -98,12 +98,12 @@
             "ws-opts": {
                 "path": "/",
                 "headers": {
-                    "Host": "jp.9916.eu.org"
+                    "Host": "new.9916.eu.org"
                 },
                 "max-early-data": 2560,
                 "early-data-header-name": "Sec-WebSocket-Protocol"
             },
-            "servername": "jp.9916.eu.org",
+            "servername": "new.9916.eu.org",
             "alpn": [
                 "http/1.1"
             ],
@@ -113,7 +113,7 @@
         {
             "name": "VLESS-zxing",
             "type": "vless",
-            "server": "jp.zxing.eu.org",
+            "server": "sg.zxing.eu.org",
             "port": 443,
             "uuid": "c51b32f8-e06e-4905-ba0a-8ae01c2b66e0",
             "packet-encoding": "packetaddr",
@@ -123,12 +123,12 @@
             "ws-opts": {
                 "path": "/",
                 "headers": {
-                    "Host": "japan.zxing.eu.org"
+                    "Host": "new.zxing.eu.org"
                 },
                 "max-early-data": 2560,
                 "early-data-header-name": "Sec-WebSocket-Protocol"
             },
-            "servername": "japan.zxing.eu.org",
+            "servername": "new.zxing.eu.org",
             "alpn": [
                 "http/1.1"
             ],
@@ -138,7 +138,7 @@
         {
             "name": "VLESS-steven9916",
             "type": "vless",
-            "server": "jp.zxing.eu.org",
+            "server": "sg.zxing.eu.org",
             "port": 443,
             "uuid": "c51b32f8-e06e-4905-ba0a-8ae01c2b66e0",
             "packet-encoding": "packetaddr",
@@ -148,12 +148,12 @@
             "ws-opts": {
                 "path": "/",
                 "headers": {
-                    "Host": "jp.steven9916.eu.org"
+                    "Host": "new.steven9916.eu.org"
                 },
                 "max-early-data": 2560,
                 "early-data-header-name": "Sec-WebSocket-Protocol"
             },
-            "servername": "jp.steven9916.eu.org",
+            "servername": "new.steven9916.eu.org",
             "alpn": [
                 "http/1.1"
             ],
@@ -163,7 +163,7 @@
         {
             "name": "VLESS-9916dns",
             "type": "vless",
-            "server": "jp.zxing.eu.org",
+            "server": "sg.zxing.eu.org",
             "port": 443,
             "uuid": "c51b32f8-e06e-4905-ba0a-8ae01c2b66e0",
             "packet-encoding": "packetaddr",
@@ -173,12 +173,12 @@
             "ws-opts": {
                 "path": "/",
                 "headers": {
-                    "Host": "jp.9916.dpdns.org"
+                    "Host": "new.9916.dpdns.org"
                 },
                 "max-early-data": 2560,
                 "early-data-header-name": "Sec-WebSocket-Protocol"
             },
-            "servername": "jp.9916.dpdns.org",
+            "servername": "new.9916.dpdns.org",
             "alpn": [
                 "http/1.1"
             ],
@@ -188,7 +188,7 @@
                {
             "name": "VLESS-zxingdns",
             "type": "vless",
-            "server": "jp.zxing.eu.org",
+            "server": "sg.zxing.eu.org",
             "port": 443,
             "uuid": "c51b32f8-e06e-4905-ba0a-8ae01c2b66e0",
             "packet-encoding": "packetaddr",
@@ -198,12 +198,12 @@
             "ws-opts": {
                 "path": "/",
                 "headers": {
-                    "Host": "jp.zxing.dpdns.org"
+                    "Host": "new.zxing.dpdns.org"
                 },
                 "max-early-data": 2560,
                 "early-data-header-name": "Sec-WebSocket-Protocol"
             },
-            "servername": "jp.zxing.dpdns.org",
+            "servername": "new.zxing.dpdns.org",
             "alpn": [
                 "http/1.1"
             ],
@@ -213,7 +213,7 @@
                {
             "name": "VLESS-zx9916dns",
             "type": "vless",
-            "server": "jp.zxing.eu.org",
+            "server": "sg.zxing.eu.org",
             "port": 443,
             "uuid": "c51b32f8-e06e-4905-ba0a-8ae01c2b66e0",
             "packet-encoding": "packetaddr",
@@ -223,12 +223,12 @@
             "ws-opts": {
                 "path": "/",
                 "headers": {
-                    "Host": "jp.zx9916.dpdns.org"
+                    "Host": "new.zx9916.dpdns.org"
                 },
                 "max-early-data": 2560,
                 "early-data-header-name": "Sec-WebSocket-Protocol"
             },
-            "servername": "jp.zx9916.dpdns.org",
+            "servername": "new.zx9916.dpdns.org",
             "alpn": [
                 "http/1.1"
             ],
@@ -360,6 +360,7 @@
         "interval": 30
     }
 }
+
 
 
 

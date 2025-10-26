@@ -89,7 +89,7 @@
         {
             "name": "VLESS-zxing",
             "type": "vless",
-            "server": "who.zxing.eu.org",
+            "server": "how.zxing.eu.org",
             "port": 443,
             "uuid": "c51b32f8-e06e-4905-ba0a-8ae01c2b66e0",
             "packet-encoding": "packetaddr",
@@ -99,12 +99,12 @@
             "ws-opts": {
                 "path": "/",
                 "headers": {
-                    "Host": "how.zxing.eu.org"
+                    "Host": "one.zxing.eu.org"
                 },
                 "max-early-data": 2560,
                 "early-data-header-name": "Sec-WebSocket-Protocol"
             },
-            "servername": "how.zxing.eu.org",
+            "servername": "one.zxing.eu.org",
             "alpn": [
                 "http/1.1"
             ],

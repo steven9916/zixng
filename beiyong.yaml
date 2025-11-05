@@ -188,7 +188,7 @@
             "skip-cert-verify": false
         },
                {
-            "name": "VLESS-zxingdns",
+            "name": "zx0036",
             "type": "vless",
             "server": "sg.zxing.eu.org",
             "port": 443,
@@ -200,12 +200,12 @@
             "ws-opts": {
                 "path": "/",
                 "headers": {
-                    "Host": "new.zxing.dpdns.org"
+                    "Host": "sg.zx0036.netlib.re"
                 },
                 "max-early-data": 2560,
                 "early-data-header-name": "Sec-WebSocket-Protocol"
             },
-            "servername": "new.zxing.dpdns.org",
+            "servername": "sg.zx0036.netlib.re",
             "alpn": [
                 "http/1.1"
             ],
@@ -213,7 +213,7 @@
             "skip-cert-verify": false
         },
                {
-            "name": "VLESS-zx9916dns",
+            "name": "st9905",
             "type": "vless",
             "server": "sg.zxing.eu.org",
             "port": 443,
@@ -225,12 +225,12 @@
             "ws-opts": {
                 "path": "/",
                 "headers": {
-                    "Host": "new.zx9916.dpdns.org"
+                    "Host": "sg.st9905.netlib.re"
                 },
                 "max-early-data": 2560,
                 "early-data-header-name": "Sec-WebSocket-Protocol"
             },
-            "servername": "new.zx9916.dpdns.org",
+            "servername": "sg.st9905.netlib.re",
             "alpn": [
                 "http/1.1"
             ],
@@ -248,6 +248,8 @@
                 "zx9916",
                 "st9916",
                 "zxing",
+                "zx0036"
+                "st9905"
 
             ]
         },
@@ -262,6 +264,8 @@
                 "zx9916",
                 "st9916",
                 "zxing",
+                "zx0036"
+                "st9905"
 
             ]
         }

@@ -136,7 +136,7 @@
             "skip-cert-verify": false
         },
         {
-            "name": "st9916",
+            "name": "st0036",
             "type": "vless",
             "server": "sg.zxing.eu.org",
             "port": 443,
@@ -148,12 +148,12 @@
             "ws-opts": {
                 "path": "/",
                 "headers": {
-                    "Host": "sg.st9916.netlib.re"
+                    "Host": "sg.st0036.netlib.re"
                 },
                 "max-early-data": 2560,
                 "early-data-header-name": "Sec-WebSocket-Protocol"
             },
-            "servername": "sg.st9916.netlib.re",
+            "servername": "sg.st0036.netlib.re",
             "alpn": [
                 "http/1.1"
             ],
@@ -161,7 +161,7 @@
             "skip-cert-verify": false
         },
         {
-            "name": "zxing",
+            "name": "zx007",
             "type": "vless",
             "server": "sg.zxing.eu.org",
             "port": 443,
@@ -173,12 +173,12 @@
             "ws-opts": {
                 "path": "/",
                 "headers": {
-                    "Host": "sg.zxing.netlib.re"
+                    "Host": "sg.zx007.netlib.re"
                 },
                 "max-early-data": 2560,
                 "early-data-header-name": "Sec-WebSocket-Protocol"
             },
-            "servername": "sg.zxing.netlib.re",
+            "servername": "sg.zx007.netlib.re",
             "alpn": [
                 "http/1.1"
             ],
@@ -244,8 +244,8 @@
                 "💦 balance 💥",
                 "zx9905",
                 "zx9916",
-                "st9916",
-                "zxing",
+                "st0036",
+                "zx007",
                 "zx0036",
                 "st9905",
 
@@ -260,8 +260,8 @@
             "proxies": [
                 "zx9905",
                 "zx9916",
-                "st9916",
-                "zxing",
+                "st0036",
+                "zx007",
                 "zx0036",
                 "st9905",
 

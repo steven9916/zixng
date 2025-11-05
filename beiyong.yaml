@@ -179,8 +179,7 @@
                 "max-early-data": 2560,
                 "early-data-header-name": "Sec-WebSocket-Protocol"
             },
-            "servername": "sg.zxing.netlib.re
-",
+            "servername": "sg.zxing.netlib.re",
             "alpn": [
                 "http/1.1"
             ],

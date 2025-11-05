@@ -88,7 +88,7 @@
         {
             "name": "zx9905",
             "type": "vless",
-            "server": "443.zxing.eu.org",
+            "server": "beiyong.zxing.eu.org",
             "port": 443,
             "uuid": "c51b32f8-e06e-4905-ba0a-8ae01c2b66e0",
             "packet-encoding": "packetaddr",
@@ -113,7 +113,7 @@
         {
             "name": "zx9916",
             "type": "vless",
-            "server": "443.zxing.eu.org",
+            "server": "beiyong.zxing.eu.org",
             "port": 443,
             "uuid": "c51b32f8-e06e-4905-ba0a-8ae01c2b66e0",
             "packet-encoding": "packetaddr",
@@ -138,7 +138,7 @@
         {
             "name": "st0036",
             "type": "vless",
-            "server": "443.zxing.eu.org",
+            "server": "beiyong.zxing.eu.org",
             "port": 443,
             "uuid": "c51b32f8-e06e-4905-ba0a-8ae01c2b66e0",
             "packet-encoding": "packetaddr",
@@ -163,7 +163,7 @@
         {
             "name": "zx007",
             "type": "vless",
-            "server": "443.zxing.eu.org",
+            "server": "beiyong.zxing.eu.org",
             "port": 443,
             "uuid": "c51b32f8-e06e-4905-ba0a-8ae01c2b66e0",
             "packet-encoding": "packetaddr",
@@ -188,7 +188,7 @@
                {
             "name": "zx0036",
             "type": "vless",
-            "server": "443.zxing.eu.org",
+            "server": "beiyong.zxing.eu.org",
             "port": 443,
             "uuid": "c51b32f8-e06e-4905-ba0a-8ae01c2b66e0",
             "packet-encoding": "packetaddr",
@@ -213,7 +213,7 @@
                {
             "name": "st9905",
             "type": "vless",
-            "server": "443.zxing.eu.org",
+            "server": "beiyong.zxing.eu.org",
             "port": 443,
             "uuid": "c51b32f8-e06e-4905-ba0a-8ae01c2b66e0",
             "packet-encoding": "packetaddr",

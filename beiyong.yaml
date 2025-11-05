@@ -173,8 +173,7 @@
             "ws-opts": {
                 "path": "/",
                 "headers": {
-                    "Host": "sg.zxing.netlib.re
-"
+                    "Host": "sg.zxing.netlib.re"
                 },
                 "max-early-data": 2560,
                 "early-data-header-name": "Sec-WebSocket-Protocol"

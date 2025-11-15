@@ -350,6 +350,7 @@
         "RULE-SET,cn,DIRECT",
         "RULE-SET,private-cidr,DIRECT,no-resolve",
         "RULE-SET,telegramcidr,✅ Selector",
+        "DOMAIN-SUFFIX,9916.eu.org,✅ Selector",
         "RULE-SET,cn-cidr,DIRECT",
         "MATCH,✅ Selector"
     ],
@@ -360,6 +361,7 @@
         "interval": 30
     }
 }
+
 
 
 

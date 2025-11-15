@@ -352,20 +352,20 @@
         "RULE-SET,telegramcidr,✅ Selector",
         "RULE-SET,cn-cidr,DIRECT",
         "MATCH,✅ Selector"，
-        "DOMAIN, api.spotify.com,DIRECT
-        'DOMAIN,moon.9916.eu.org,DIRECT'
-        'DOMAIN,9916.eu.org,DIRECT'
-        'DOMAIN,zxing.eu.org,DIRECT'
-        'DOMAIN,moon.zxing.eu.org,DIRECT'
-        'DOMAIN,moon.zxing.qzz.io,DIRECT'
-        'DOMAIN,dnschecker.org,DIRECT'
-        'DOMAIN,bsbb.cc,DIRECT'
-        'DOMAIN-SUFFIX,9916.eu.org,✅ Selector'
-        'DOMAIN,am.amclubss.com,DIRECT'
-        'DOMAIN-SUFFIX,alist.zxing.qzz.io,✅ Selector'
-        'DOMAIN-SUFFIX,claw.cloud,DIRECT'
-        'DOMAIN-SUFFIX,zxing.qzz.io,DIRECT'
-        'DOMAIN-SUFFIX,cloudflare.com,DIRECT'
+        "DOMAIN, api.spotify.com,DIRECT",
+        "DOMAIN,moon.9916.eu.org,DIRECT",
+        "DOMAIN,9916.eu.org,DIRECT",
+        "DOMAIN,zxing.eu.org,DIRECT",
+        "DOMAIN,moon.zxing.eu.org,DIRECT",
+        "DOMAIN,moon.zxing.qzz.io,DIRECT",
+        "DOMAIN,dnschecker.org,DIRECT",
+        "DOMAIN,bsbb.cc,DIRECT",
+        "DOMAIN-SUFFIX,9916.eu.org,✅ Selector",
+        "DOMAIN,am.amclubss.com,DIRECT",
+        "DOMAIN-SUFFIX,alist.zxing.qzz.io,✅ Selector",
+        "DOMAIN-SUFFIX,claw.cloud,DIRECT",
+        "DOMAIN-SUFFIX,zxing.qzz.io,DIRECT",
+        "DOMAIN-SUFFIX,cloudflare.com,DIRECT"
     ],
     "ntp": {
         "enable": true,
@@ -374,6 +374,7 @@
         "interval": 30
     }
 }
+
 
 
 

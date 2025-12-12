@@ -87,7 +87,7 @@
     "proxies": [
         
                {
-            "name": "新加坡",
+            "name": "sg",
             "type": "vless",
             "server": "sg.zxing.eu.org",
             "port": 443,
@@ -118,7 +118,7 @@
             "type": "select",
             "proxies": [
 
-                "新加坡",
+                "sg",
             ]
         },
        

@@ -84,9 +84,8 @@
             }
         }
     },
-    "proxies": [
-        
-               {
+    "proxies": [   
+        {
             "name": "sg",
             "type": "vless",
             "server": "sg.zxing.eu.org",
@@ -117,11 +116,9 @@
             "name": "✅ Selector",
             "type": "select",
             "proxies": [
-
                 "sg",
             ]
-        },
-       
+        },       
     ],
     "rule-providers": {
         "private": {

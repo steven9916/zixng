@@ -99,12 +99,12 @@
             "ws-opts": {
                 "path": "/",
                 "headers": {
-                    "Host": "xianghao.netlib.re"
+                    "Host": "zx9916.netlib.re"
                 },
                 "max-early-data": 2560,
                 "early-data-header-name": "Sec-WebSocket-Protocol"
             },
-            "servername": "xianghao.netlib.re",
+            "servername": "zx9916.netlib.re",
             "alpn": [
                 "http/1.1"
             ],

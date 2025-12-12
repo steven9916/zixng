@@ -86,7 +86,7 @@
     },
     "proxies": [   
         {
-            "name": "sg",
+            "name": "新加坡",
             "type": "vless",
             "server": "sg.zxing.eu.org",
             "port": 443,
@@ -98,12 +98,12 @@
             "ws-opts": {
                 "path": "/",
                 "headers": {
-                    "Host": "zx9916.netlib.re"
+                    "Host": "sg.zx9916.netlib.re"
                 },
                 "max-early-data": 2560,
                 "early-data-header-name": "Sec-WebSocket-Protocol"
             },
-            "servername": "zx9916.netlib.re",
+            "servername": "sg.zx9916.netlib.re",
             "alpn": [
                 "http/1.1"
             ],
@@ -116,7 +116,7 @@
             "name": "✅ Selector",
             "type": "select",
             "proxies": [
-                "sg",
+                "新加坡",
             ]
         },       
     ],

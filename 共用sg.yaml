@@ -98,12 +98,12 @@
             "ws-opts": {
                 "path": "/",
                 "headers": {
-                    "Host": "sg.zx9916.netlib.re"
+                    "Host": "sg.st001.netlib.re"
                 },
                 "max-early-data": 2560,
                 "early-data-header-name": "Sec-WebSocket-Protocol"
             },
-            "servername": "sg.zx9916.netlib.re",
+            "servername": "sg.st001.netlib.re",
             "alpn": [
                 "http/1.1"
             ],

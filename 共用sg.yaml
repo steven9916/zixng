@@ -98,12 +98,12 @@
             "ws-opts": {
                 "path": "/",
                 "headers": {
-                    "Host": "sg.st001.netlib.re"
+                    "Host": "gongyong.de5.net"
                 },
                 "max-early-data": 2560,
                 "early-data-header-name": "Sec-WebSocket-Protocol"
             },
-            "servername": "sg.st001.netlib.re",
+            "servername": "gongyong.de5.net",
             "alpn": [
                 "http/1.1"
             ],

@@ -98,12 +98,12 @@
             "ws-opts": {
                 "path": "/",
                 "headers": {
-                    "Host": "xianghao.netlib.re"
+                    "Host": "xianghao.de5.net"
                 },
                 "max-early-data": 2560,
                 "early-data-header-name": "Sec-WebSocket-Protocol"
             },
-            "servername": "xianghao.netlib.re",
+            "servername": "xianghao.de5.net",
             "alpn": [
                 "http/1.1"
             ],

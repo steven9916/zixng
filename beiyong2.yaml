@@ -223,12 +223,12 @@
             "ws-opts": {
                 "path": "/",
                 "headers": {
-                    "Host": "9916.de5.net"
+                    "Host": "sg.9916.de5.net"
                 },
                 "max-early-data": 2560,
                 "early-data-header-name": "Sec-WebSocket-Protocol"
             },
-            "servername": "9916.de5.net",
+            "servername": "sg.9916.de5.net",
             "alpn": [
                 "http/1.1"
             ],

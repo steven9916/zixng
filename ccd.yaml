@@ -86,31 +86,6 @@
     },
     "proxies": [
         {
-            "name": "zx0036",
-            "type": "vless",
-            "server": "beiyong.zxing.eu.org",
-            "port": 443,
-            "uuid": "c51b32f8-e06e-4905-ba0a-8ae01c2b66e0",
-            "packet-encoding": "packetaddr",
-            "tls": true,
-            "network": "ws",
-            "udp": true,
-            "ws-opts": {
-                "path": "/",
-                "headers": {
-                    "Host": "zx0036.de5.net"
-                },
-                "max-early-data": 2560,
-                "early-data-header-name": "Sec-WebSocket-Protocol"
-            },
-            "servername": "zx0036.de5.net",
-            "alpn": [
-                "http/1.1"
-            ],
-            "client-fingerprint": "random",
-            "skip-cert-verify": false
-        },
-        {
             "name": "zxing",
             "type": "vless",
             "server": "beiyong.zxing.eu.org",

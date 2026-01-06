@@ -86,9 +86,9 @@
     },
     "proxies": [
         {
-            "name": "zxing",
+            "name": "9916cc",
             "type": "vless",
-            "server": "beiyong.zxing.eu.org",
+            "server": "sg.zxing.eu.org",
             "port": 443,
             "uuid": "c51b32f8-e06e-4905-ba0a-8ae01c2b66e0",
             "packet-encoding": "packetaddr",
@@ -98,12 +98,37 @@
             "ws-opts": {
                 "path": "/",
                 "headers": {
-                    "Host": "sg.zxing.cc.cd"
+                    "Host": "sg.9196.cc.cd"
                 },
                 "max-early-data": 2560,
                 "early-data-header-name": "Sec-WebSocket-Protocol"
             },
-            "servername": "sg.zxing.cc.cd",
+            "servername": "sg.9916.cc.cd",
+            "alpn": [
+                "http/1.1"
+            ],
+            "client-fingerprint": "random",
+            "skip-cert-verify": false
+        },
+        {
+            "name": "VLESS-zxing",
+            "type": "vless",
+            "server": "sg.zxing.eu.org",
+            "port": 443,
+            "uuid": "c51b32f8-e06e-4905-ba0a-8ae01c2b66e0",
+            "packet-encoding": "packetaddr",
+            "tls": true,
+            "network": "ws",
+            "udp": true,
+            "ws-opts": {
+                "path": "/",
+                "headers": {
+                    "Host": "zxing.cc.cd"
+                },
+                "max-early-data": 2560,
+                "early-data-header-name": "Sec-WebSocket-Protocol"
+            },
+            "servername": "zxing.cc.cd",
             "alpn": [
                 "http/1.1"
             ],
@@ -113,7 +138,7 @@
         {
             "name": "9916us",
             "type": "vless",
-            "server": "beiyong.zxing.eu.org",
+            "server": "sg.zxing.eu.org",
             "port": 443,
             "uuid": "c51b32f8-e06e-4905-ba0a-8ae01c2b66e0",
             "packet-encoding": "packetaddr",
@@ -135,40 +160,15 @@
             "client-fingerprint": "random",
             "skip-cert-verify": false
         },
-        {
-            "name": "9916cc",
-            "type": "vless",
-            "server": "beiyong.zxing.eu.org",
-            "port": 443,
-            "uuid": "c51b32f8-e06e-4905-ba0a-8ae01c2b66e0",
-            "packet-encoding": "packetaddr",
-            "tls": true,
-            "network": "ws",
-            "udp": true,
-            "ws-opts": {
-                "path": "/",
-                "headers": {
-                    "Host": "sg.9916.cc.cd"
-                },
-                "max-early-data": 2560,
-                "early-data-header-name": "Sec-WebSocket-Protocol"
-            },
-            "servername": "sg.9916.cc.cd",
-            "alpn": [
-                "http/1.1"
-            ],
-            "client-fingerprint": "random",
-            "skip-cert-verify": false
-        },
-              
+    ],
     "proxy-groups": [
         {
             "name": "✅ Selector",
             "type": "select",
             "proxies": [
                 "💦 balance 💥",
-                "9916cc",
-                "zxing",
+                "916cc",
+                "VLESS-zxing",
                 "9916us",
             ]
         },
@@ -180,7 +180,7 @@
             "tolerance": 50,
             "proxies": [
                 "9916cc",
-                "zxing",
+                "VLESS-zxing",
                 "9916us",
             ]
         }

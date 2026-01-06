@@ -98,7 +98,7 @@
             "ws-opts": {
                 "path": "/",
                 "headers": {
-                    "Host": "sg.9196.cc.cd"
+                    "Host": "sg.9916.cc.cd"
                 },
                 "max-early-data": 2560,
                 "early-data-header-name": "Sec-WebSocket-Protocol"

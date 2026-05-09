@@ -138,8 +138,8 @@
         {
             "name": "kr",
             "type": "vless",
-            "server": "14.52.210.173",
-            "port": 12312,
+            "server": "119.206.17.38",
+            "port": 12510,
             "uuid": "c51b32f8-e06e-4905-ba0a-8ae01c2b66e0",
             "packet-encoding": "packetaddr",
             "tls": true,

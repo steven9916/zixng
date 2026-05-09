@@ -86,9 +86,9 @@
     },
     "proxies": [
         {
-            "name": "9916cc",
+            "name": "hk",
             "type": "vless",
-            "server": "sg.zxing.eu.org",
+            "server": "hk.zxing.eu.org",
             "port": 443,
             "uuid": "c51b32f8-e06e-4905-ba0a-8ae01c2b66e0",
             "packet-encoding": "packetaddr",
@@ -98,12 +98,12 @@
             "ws-opts": {
                 "path": "/",
                 "headers": {
-                    "Host": "sg.9916.cc.cd"
+                    "Host": "no.sg.9916.cc.cd"
                 },
                 "max-early-data": 2560,
                 "early-data-header-name": "Sec-WebSocket-Protocol"
             },
-            "servername": "sg.9916.cc.cd",
+            "servername": "no.sg.9916.cc.cd",
             "alpn": [
                 "http/1.1"
             ],
@@ -111,10 +111,10 @@
             "skip-cert-verify": false
         },
         {
-            "name": "VLESS-zxing",
+            "name": "tw",
             "type": "vless",
-            "server": "sg.zxing.eu.org",
-            "port": 443,
+            "server": "220.128.110.108",
+            "port": 43,
             "uuid": "c51b32f8-e06e-4905-ba0a-8ae01c2b66e0",
             "packet-encoding": "packetaddr",
             "tls": true,
@@ -123,12 +123,12 @@
             "ws-opts": {
                 "path": "/",
                 "headers": {
-                    "Host": "zxing.cc.cd"
+                    "Host": "no.zxing.cc.cd"
                 },
                 "max-early-data": 2560,
                 "early-data-header-name": "Sec-WebSocket-Protocol"
             },
-            "servername": "zxing.cc.cd",
+            "servername": "no.zxing.cc.cd",
             "alpn": [
                 "http/1.1"
             ],
@@ -136,10 +136,10 @@
             "skip-cert-verify": false
         },
         {
-            "name": "9916us",
+            "name": "kr",
             "type": "vless",
-            "server": "sg.zxing.eu.org",
-            "port": 443,
+            "server": " 210.179.125.32",
+            "port": 12328,
             "uuid": "c51b32f8-e06e-4905-ba0a-8ae01c2b66e0",
             "packet-encoding": "packetaddr",
             "tls": true,
@@ -167,9 +167,9 @@
             "type": "select",
             "proxies": [
                 "💦 balance 💥",
-                "9916cc",
-                "VLESS-zxing",
-                "9916us",
+                "hk",
+                "tw",
+                "kr",
             ]
         },
         {
@@ -179,9 +179,9 @@
             "interval": 30,
             "tolerance": 50,
             "proxies": [
-                "9916cc",
-                "VLESS-zxing",
-                "9916us",
+                "hk",
+                "tw",
+                "kr",
             ]
         }
     ],
